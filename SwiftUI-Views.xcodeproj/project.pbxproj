@@ -11,6 +11,11 @@
 		F77D020826EDAA60008234ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D020726EDAA60008234ED /* ContentView.swift */; };
 		F77D020A26EDAA62008234ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77D020926EDAA62008234ED /* Assets.xcassets */; };
 		F77D020D26EDAA62008234ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77D020C26EDAA62008234ED /* Preview Assets.xcassets */; };
+		F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021426EDAAA3008234ED /* SwiftUI_Text.swift */; };
+		F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021626EDB74D008234ED /* SwiftUI_Images_Labels.swift */; };
+		F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021826EE0FA1008234ED /* SwiftUI_stacks.swift */; };
+		F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021A26EE1ACD008234ED /* SwiftUI_ScrollView.swift */; };
+		F77D021D26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021C26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		F77D020926EDAA62008234ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F77D020C26EDAA62008234ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F77D020E26EDAA62008234ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77D021426EDAAA3008234ED /* SwiftUI_Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Text.swift; sourceTree = "<group>"; };
+		F77D021626EDB74D008234ED /* SwiftUI_Images_Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Images_Labels.swift; sourceTree = "<group>"; };
+		F77D021826EE0FA1008234ED /* SwiftUI_stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_stacks.swift; sourceTree = "<group>"; };
+		F77D021A26EE1ACD008234ED /* SwiftUI_ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ScrollView.swift; sourceTree = "<group>"; };
+		F77D021C26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Buttons_Labels_Gradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			children = (
 				F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */,
 				F77D020726EDAA60008234ED /* ContentView.swift */,
+				F77D021426EDAAA3008234ED /* SwiftUI_Text.swift */,
+				F77D021626EDB74D008234ED /* SwiftUI_Images_Labels.swift */,
+				F77D021826EE0FA1008234ED /* SwiftUI_stacks.swift */,
+				F77D021A26EE1ACD008234ED /* SwiftUI_ScrollView.swift */,
+				F77D021C26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77D021D26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift in Sources */,
+				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
+				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
+				F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */,
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
+				F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
