@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */; };
+		F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */; };
 		F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */; };
 		F77D020826EDAA60008234ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D020726EDAA60008234ED /* ContentView.swift */; };
 		F77D020A26EDAA62008234ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77D020926EDAA62008234ED /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_State_Binding.swift; sourceTree = "<group>"; };
+		F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Path_Shape.swift; sourceTree = "<group>"; };
 		F77D020226EDAA60008234ED /* SwiftUI-Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ViewsApp.swift; sourceTree = "<group>"; };
 		F77D020726EDAA60008234ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				F77D021A26EE1ACD008234ED /* SwiftUI_ScrollView.swift */,
 				F77D021C26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift */,
 				F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */,
+				F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
@@ -160,6 +163,7 @@
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
 				F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */,
+				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
 				F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */,
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
