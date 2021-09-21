@@ -14,42 +14,36 @@ import SwiftUI
 struct SwiftUI_ScrollView: View {
     var body: some View {
         VStack(spacing: 0) {
-            HStack {
-                VStack(alignment: .leading, spacing: 5) {
-                    Text("SUNDAY, SEP 12")
-                        .font(.system(.caption, design: .rounded))
-                        .foregroundColor(.gray)
-                    Text("Your Reading")
-                        .font(.system(.largeTitle, design: .rounded))
-                        .fontWeight(.black)
-                }
-                Spacer()
-            }
-            .padding([.top,.horizontal])
-            
-//            ScrollView {
-//                VStack {
-//                    CardView(image: "swiftui-button", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Simon Ng")
-//                    CardView(image: "macos-programming", category: "macOS", heading: "Building a Simple Editing App", author: "Gabriel Theodoropoulos")
-//                    CardView(image: "flutter-app", category: "Flutter", heading: "Building a Complex Layout with Flutter", author: "Lawrence Tan")
-//                    CardView(image: "natural-language-api", category: "iOS", heading: "What's Newin Natural Language API", author: "Sai Kambampati")
-//                }
-//            }
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    Group {
-                        CardView(image: "swiftui-button", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Simon Ng")
-                        CardView(image: "macos-programming", category: "macOS", heading: "Building a Simple Editing App", author: "Gabriel Theodoropoulos")
-                        CardView(image: "flutter-app", category: "Flutter", heading: "Building a Complex Layout with Flutter", author: "Lawrence Tan")
-                        CardView(image: "natural-language-api", category: "iOS", heading: "What's Newin Natural Language API", author: "Sai Kambampati")
-                    }.frame(width:300)
-                }
-            }
+            CardHeaderView()
+            CardListView()
 
             Spacer()
         }
         
+    }
+}
+
+struct CardListView: View {
+    var body: some View {
+//        ScrollView {
+//            VStack {
+//                CardView(image: "swiftui-button", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Simon Ng")
+//                CardView(image: "macos-programming", category: "macOS", heading: "Building a Simple Editing App", author: "Gabriel Theodoropoulos")
+//                CardView(image: "flutter-app", category: "Flutter", heading: "Building a Complex Layout with Flutter", author: "Lawrence Tan")
+//                CardView(image: "natural-language-api", category: "iOS", heading: "What's Newin Natural Language API", author: "Sai Kambampati")
+//            }
+//        }
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                Group {
+                    CardView(image: "swiftui-button", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Simon Ng")
+                    CardView(image: "macos-programming", category: "macOS", heading: "Building a Simple Editing App", author: "Gabriel Theodoropoulos")
+                    CardView(image: "flutter-app", category: "Flutter", heading: "Building a Complex Layout with Flutter", author: "Lawrence Tan")
+                    CardView(image: "natural-language-api", category: "iOS", heading: "What's Newin Natural Language API", author: "Sai Kambampati")
+                }
+                .frame(width:300)
+            }
+        }
     }
 }
 
@@ -93,6 +87,22 @@ struct CardView:View {
     }
 }
 
+struct CardHeaderView: View {
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 5) {
+                Text("SUNDAY, SEP 12")
+                    .font(.system(.caption, design: .rounded))
+                    .foregroundColor(.gray)
+                Text("Your Reading")
+                    .font(.system(.largeTitle, design: .rounded))
+                    .fontWeight(.black)
+            }
+            Spacer()
+        }
+        .padding([.top,.horizontal])
+    }
+}
 
 struct SwiftUI_ScrollView_Previews: PreviewProvider {
     static var previews: some View {
