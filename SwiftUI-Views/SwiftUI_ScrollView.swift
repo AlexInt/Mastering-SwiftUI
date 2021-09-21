@@ -33,42 +33,58 @@ struct CardListView: View {
 //                CardView(image: "natural-language-api", category: "iOS", heading: "What's Newin Natural Language API", author: "Sai Kambampati")
 //            }
 //        }
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
-                Group {
-                    CardView(image: "swiftui-button", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Simon Ng")
-                    CardView(image: "macos-programming", category: "macOS", heading: "Building a Simple Editing App", author: "Gabriel Theodoropoulos")
-                    CardView(image: "flutter-app", category: "Flutter", heading: "Building a Complex Layout with Flutter", author: "Lawrence Tan")
-                    CardView(image: "natural-language-api", category: "iOS", heading: "What's Newin Natural Language API", author: "Sai Kambampati")
-                }
-                .frame(width:300)
-            }
+//        ScrollView(.horizontal, showsIndicators: false) {
+//            HStack {
+//                Group {
+//                    CardView()
+//                    CardView()
+//                    CardView()
+//                    CardView()
+//                }
+//                .frame(width:300)
+//            }
+//        }
+        List(Cards){cardItem in
+            CardView(cardItem: cardItem)
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
-struct CardView:View {
+var Cards = [
+    Article(image: "swiftui-button", category: "SwiftUI", heading: "Drawing a Border with Rounded Corners", author: "Simon Ng"),
+    Article(image: "macos-programming", category: "macOS", heading: "Building a Simple Editing App", author: "Gabriel Theodoropoulos"),
+    Article(image: "flutter-app", category: "Flutter", heading: "Building a Complex Layout with Flutter", author: "Lawrence Tan"),
+    Article(image: "natural-language-api", category: "iOS", heading: "What's Newin Natural Language API", author: "Sai Kambampati"),
+]
+
+struct Article: Identifiable {
+    var id = UUID()
     var image: String
     var category: String
     var heading: String
     var author: String
+}
+
+struct CardView:View {
+    var cardItem:Article
     
     var body: some View {
         VStack {
-            Image(image)
+            Image(cardItem.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             HStack {
                 VStack(alignment: .leading) {
-                    Text(category)
+                    Text(cardItem.category)
                         .font(.headline)
                         .foregroundColor(.secondary)
-                    Text(heading)
+                    Text(cardItem.heading)
                         .font(.title)
                         .fontWeight(.black)
                         .foregroundColor(.primary)
                         .lineLimit(3)
-                    Text("Written by \(author)".uppercased())
+                    Text("Written by \(cardItem.author)".uppercased())
                         .font(.caption)
                 }
                 .minimumScaleFactor(0.5)

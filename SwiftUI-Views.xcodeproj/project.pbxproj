@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070326F9957D00AC66BC /* SwiftUI_Transition.swift */; };
+		F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070526F9D4A300AC66BC /* SwiftUI_List.swift */; };
+		F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070726F9E29F00AC66BC /* ArticleView.swift */; };
+		F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070926F9E34600AC66BC /* SwiftUI_NavigationView.swift */; };
 		F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */; };
 		F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */; };
 		F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		F706070326F9957D00AC66BC /* SwiftUI_Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Transition.swift; sourceTree = "<group>"; };
+		F706070526F9D4A300AC66BC /* SwiftUI_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_List.swift; sourceTree = "<group>"; };
+		F706070726F9E29F00AC66BC /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		F706070926F9E34600AC66BC /* SwiftUI_NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NavigationView.swift; sourceTree = "<group>"; };
 		F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_State_Binding.swift; sourceTree = "<group>"; };
 		F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Path_Shape.swift; sourceTree = "<group>"; };
 		F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Animation.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 				F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */,
 				F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */,
 				F706070326F9957D00AC66BC /* SwiftUI_Transition.swift */,
+				F706070526F9D4A300AC66BC /* SwiftUI_List.swift */,
+				F706070926F9E34600AC66BC /* SwiftUI_NavigationView.swift */,
+				F706070726F9E29F00AC66BC /* ArticleView.swift */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
@@ -171,10 +180,13 @@
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
 				F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */,
 				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,
+				F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */,
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
+				F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */,
 				F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */,
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
 				F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */,
+				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
 				F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
