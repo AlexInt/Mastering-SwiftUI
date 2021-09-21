@@ -10,10 +10,14 @@ import SwiftUI
 struct SwiftUI_NavigationView: View {
     var body: some View {
         NavigationView {
-            List(restaurants) {
-                BasicImageRow(restaurant: $0)
+            List {
+                ForEach(restaurants) { restaurant in
+                    NavigationLink(destination: RestaurantDetailView(restaurant: restaurant)) {
+                        BasicImageRow(restaurant: restaurant)
+                    }
+                }
             }
-            .navigationTitle("Restaurants")
+            .navigationBarTitle("Restaurants", displayMode: .inline)
         }
     }
 }
@@ -21,5 +25,20 @@ struct SwiftUI_NavigationView: View {
 struct SwiftUI_NavigationView_Previews: PreviewProvider {
     static var previews: some View {
         SwiftUI_NavigationView()
+    }
+}
+
+struct RestaurantDetailView: View {
+    var restaurant: Restaurant
+    var body: some View {
+        VStack {
+            Image(restaurant.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Text(restaurant.name)
+                .font(.system(.title, design: .rounded))
+                .fontWeight(.black)
+            Spacer()
+        }
     }
 }
