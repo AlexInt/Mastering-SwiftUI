@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ArticleView: View {
     var body: some View {
-        List(articles) { article in
+        List(articleItems) { article in
             ArticleRow(article: article)
         }
     }
@@ -21,7 +21,7 @@ struct ArticleView_Previews: PreviewProvider {
     }
 }
 
-var articles = [
+var articleItems = [
     ArticleItem(title: "The Comprehensive Guide to the State Management in iOS", author: "Alexey Naumov", rating: 4, excerpt: "There are many challenges in the software development, but there is one beast that tends to screw things up much more often than the others: the problem of app’s state management and data propagation.", image: "state-management"),
     ArticleItem(title: "Using Swift Protocols to Manage App Configuration", author: "Gabriel Theodoropoulos", rating: 4, excerpt: "Hello and welcome to a new tutorial! One of the most common concepts met and used in Swift by all developers is protocols, and I don’t think there’s even one developer who doesn’t know about them.", image: "protocols"),
     ArticleItem(title: "Drawing a Border with Rounded Corners", author: "Simon Ng", rating: 4, excerpt: "With SwiftUI, you can easily draw a border around a button or text (and it actually works for all views) using the border modifier.", image: "swiftui-button"),
