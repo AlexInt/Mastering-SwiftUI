@@ -42,6 +42,10 @@ enum DisplayOrderType: Int, CaseIterable {
 
 import Combine
 
+/*
+ ObservableObject-this is a protocol of the Combine framework.
+ By implementing this protocol, the object can serve as a publisher that emits the changed value. Those subscribers that monitor the value change will get notified.
+ */
 final class SettingStore: ObservableObject {
     init() {
         UserDefaults.standard.register(defaults: [
@@ -50,7 +54,9 @@ final class SettingStore: ObservableObject {
             "view.preferences.maxPriceLevel":5
         ])
     }
-    
+    /*
+     @Published - it's a property wrapper that works along with ObservableObject . When a property is prefixed with @Publisher , this indicates that the publisher should inform all subscribers whenever the property's value is changed.
+     */
     @Published var showCheckInOnly: Bool = UserDefaults.standard.bool(forKey: "view.preferences.showCheckInOnly") {
         didSet {
             UserDefaults.standard.set(showCheckInOnly, forKey: "view.preferences.showCheckInOnly")

@@ -36,7 +36,9 @@ struct SwiftUI_form: View {
     
     @State private var selectedRestaurant: RestaurantItem?
     @State private var showSettings: Bool = false
-    
+    /*
+     @EnvironmentObject works pretty much the same as @State. But when a property is declared as an environment object, it will be made accessible to all views in the entire app.
+     */
     @EnvironmentObject var settingStore: SettingStore
     
     var body: some View {
