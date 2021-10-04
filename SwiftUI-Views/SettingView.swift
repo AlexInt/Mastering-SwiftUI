@@ -6,16 +6,17 @@
 //
 
 import SwiftUI
+import Combine
 
 struct SettingView: View {
-    private var displayOrders = [ "Alphabetical",
-                                  "Show Favorite First",
-                                  "Show Check-i n First"]
-    @State private var selectedOrder = 0
+
+    @State private var selectedOrder: DisplayOrderType = .alphabetical
     
     @State private var showCheckInOnly = false
     
     @State private var maxPriceLevel = 5
+    
+    @EnvironmentObject var settingStore: SettingStore
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -28,8 +29,8 @@ struct SettingView: View {
 //
 //                    }
                     Picker("Display Order", selection: $selectedOrder) {
-                        ForEach(0..<displayOrders.count, id:\.self) {
-                            Text(self.displayOrders[$0])
+                        ForEach(DisplayOrderType.allCases, id:\.self) {
+                            Text($0.text)
                         }
                     }
                 }
@@ -70,18 +71,26 @@ struct SettingView: View {
                 , trailing:
 
                 Button(action: {
-                    self.presentationMode.wrappedValue.dismiss()
+                self.settingStore.showCheckInOnly = self.showCheckInOnly;
+                self.settingStore.displayOrder = self.selectedOrder;
+                self.settingStore.maxPriceLevel = self.maxPriceLevel;
+                self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Save")
                         .foregroundColor(.black)
                 })
             )
         }
+        .onAppear {
+            self.selectedOrder = self.settingStore.displayOrder
+            self.showCheckInOnly = self.settingStore.showCheckInOnly
+            self.maxPriceLevel = self.settingStore.maxPriceLevel
+        }
     }
 }
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView()
+        SettingView().environmentObject(SettingStore())
     }
 }

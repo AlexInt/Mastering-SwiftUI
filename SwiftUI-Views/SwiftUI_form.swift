@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct SwiftUI_form: View {
     @State var restaurantItems = [
@@ -36,47 +37,51 @@ struct SwiftUI_form: View {
     @State private var selectedRestaurant: RestaurantItem?
     @State private var showSettings: Bool = false
     
+    @EnvironmentObject var settingStore: SettingStore
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(restaurantItems) { restaurant in
-                    RestaurantBasicImageRow(restaurant: restaurant)
-                        .contextMenu {
-                            
-                            Button(action: {
-                                // mark the selected restaurant as check-in
-                                self.checkIn(item: restaurant)
-                            }) {
-                                HStack {
-                                    Text("Check-in")
-                                    Image(systemName: "checkmark.seal.fill")
-                                }
-                            }
-                            
-                            Button(action: {
-                                // delete the selected restaurant
-                                self.delete(item: restaurant)
-                            }) {
-                                HStack {
-                                    Text("Delete")
-                                    Image(systemName: "trash")
-                                }
-                            }
-                            
-                            Button(action: {
-                                // mark the selected restaurant as favorite
-                                self.setFavorite(item: restaurant)
+                ForEach(restaurantItems.sorted(by: settingStore.displayOrder.predicate())) { restaurant in
+                    if self.shouldShowItem(restaurant: restaurant){
+                        RestaurantBasicImageRow(restaurant: restaurant)
+                            .contextMenu {
                                 
-                            }) {
-                                HStack {
-                                    Text("Favorite")
-                                    Image(systemName: "star")
+                                Button(action: {
+                                    // mark the selected restaurant as check-in
+                                    self.checkIn(item: restaurant)
+                                }) {
+                                    HStack {
+                                        Text("Check-in")
+                                        Image(systemName: "checkmark.seal.fill")
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    // delete the selected restaurant
+                                    self.delete(item: restaurant)
+                                }) {
+                                    HStack {
+                                        Text("Delete")
+                                        Image(systemName: "trash")
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    // mark the selected restaurant as favorite
+                                    self.setFavorite(item: restaurant)
+                                    
+                                }) {
+                                    HStack {
+                                        Text("Favorite")
+                                        Image(systemName: "star")
+                                    }
                                 }
                             }
-                        }
-                        .onTapGesture {
-                            self.selectedRestaurant = restaurant
-                        }
+                            .onTapGesture {
+                                self.selectedRestaurant = restaurant
+                            }
+                    }
                 }
                 .onDelete { (indexSet) in
                     self.restaurantItems.remove(atOffsets: indexSet)
@@ -94,7 +99,7 @@ struct SwiftUI_form: View {
             })
             )
             .sheet(isPresented: $showSettings) {
-                SettingView()
+                SettingView().environmentObject(SettingStore())
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
@@ -119,6 +124,11 @@ struct SwiftUI_form: View {
             self.restaurantItems[index].isCheckIn.toggle()
         }
     }
+    
+    private func shouldShowItem(restaurant: RestaurantItem) -> Bool {
+        return (!settingStore.showCheckInOnly || restaurant.isCheckIn) && (restaurant.priceLevel <= settingStore.maxPriceLevel)
+    }
+    
 }
 
 struct RestaurantItem: Identifiable {
@@ -190,6 +200,6 @@ struct RestaurantBasicImageRow: View {
 
 struct SwiftUI_form_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUI_form()
+        SwiftUI_form().environmentObject(SettingStore())
     }
 }
