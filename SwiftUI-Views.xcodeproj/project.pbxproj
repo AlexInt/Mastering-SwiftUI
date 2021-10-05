@@ -23,6 +23,8 @@
 		F731E16C270AEACA0090D24C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E16B270AEACA0090D24C /* SettingView.swift */; };
 		F731E16E270AF59F0090D24C /* SettingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E16D270AF59F0090D24C /* SettingStore.swift */; };
 		F731E170270B33BE0090D24C /* SwiftUI_ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */; };
+		F731E172270C5BCF0090D24C /* SwiftUI_signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */; };
+		F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E173270C67250090D24C /* UserRegistrationViewModel.swift */; };
 		F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */; };
 		F77D020826EDAA60008234ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D020726EDAA60008234ED /* ContentView.swift */; };
 		F77D020A26EDAA62008234ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77D020926EDAA62008234ED /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		F731E16B270AEACA0090D24C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F731E16D270AF59F0090D24C /* SettingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStore.swift; sourceTree = "<group>"; };
 		F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ContextMenu.swift; sourceTree = "<group>"; };
+		F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_signup.swift; sourceTree = "<group>"; };
+		F731E173270C67250090D24C /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
 		F77D020226EDAA60008234ED /* SwiftUI-Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ViewsApp.swift; sourceTree = "<group>"; };
 		F77D020726EDAA60008234ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				F731E16B270AEACA0090D24C /* SettingView.swift */,
 				F731E16D270AF59F0090D24C /* SettingStore.swift */,
 				F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */,
+				F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */,
+				F731E173270C67250090D24C /* UserRegistrationViewModel.swift */,
 				F731E1602709BB710090D24C /* Article */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
@@ -216,6 +222,7 @@
 				F731E166270AAE890090D24C /* SwiftUI_Modal_Alert_Float.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
 				F731E15F2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift in Sources */,
+				F731E172270C5BCF0090D24C /* SwiftUI_signup.swift in Sources */,
 				F731E168270AB4140090D24C /* SwiftUI_Modal.swift in Sources */,
 				F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */,
 				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,
@@ -228,6 +235,7 @@
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
 				F731E1622709BB890090D24C /* Article.swift in Sources */,
 				F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */,
+				F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */,
 				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
 				F731E16E270AF59F0090D24C /* SettingStore.swift in Sources */,
 				F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */,
