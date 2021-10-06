@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SwiftUI_signup: View {
     
+    //Subscriber
     @ObservedObject private var userRegistrationVM = UserRegistrationViewModel()
     
     var body: some View {

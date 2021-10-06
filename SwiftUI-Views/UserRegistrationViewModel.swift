@@ -8,7 +8,15 @@
 import Foundation
 import Combine
 
+
+/*
+ Publisher and Subscriber are the two core elements of the framework. With Combine, Publisher sends events and Subscriber subscribes to receive values from that Publisher.
+ */
 class UserRegistrationViewModel: ObservableObject {
+    
+    /*
+     All these properties are annotated with @Published because we want to notify the subscribers whenever there is a value change and perform the validation accordingly.
+     */
     //Input
     @Published var username = ""
     @Published var password = ""
@@ -24,6 +32,13 @@ class UserRegistrationViewModel: ObservableObject {
     //Because cancellableSet is defined as a property of the class, the cleanup and cancellation of the subscription will happen when the class is deinitialized.
     
     init() {
+        /*
+         The Combine framework provides two built-in subscribers: sink and assign. For sink , it creates a general purpose subscriber to receive values. assign allows you to create another type of subscriber that can update a specific property of an object.
+         */
+        
+        /*
+         Since we're subscribing to the change of UI events, we call the receive(on:) function to ensure the subscriber receives values on the main thread (i.e. RunLoop.main ).
+         */
         $username
             .receive(on: RunLoop.main)
             .map{ $0.count >= 4 }
