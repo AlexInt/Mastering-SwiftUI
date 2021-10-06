@@ -33,6 +33,9 @@ struct SwiftUI_NavigationView: View {
         UINavigationBar.appearance().tintColor = .black
     }
     
+    @State var restaurants = Restaurants
+    @State private var showActionSheet = false
+    @State private var selectedRestaurant: Restaurant?
     
     var body: some View {
         NavigationView {
@@ -43,10 +46,91 @@ struct SwiftUI_NavigationView: View {
                     
                     NavigationLink(destination: RestaurantDetailView(restaurant: restaurant)) {
                         BasicImageRow(restaurant: restaurant)
+                            .contextMenu {
+                                Button(action: {
+                                    self.setCheckIn(item: restaurant)
+                                }) {
+                                    HStack {
+                                        Text("Check-in")
+                                        Image(systemName: "checkmark.seal.fill")
+                                    }
+                                }
+                                Button(action: {
+                                    // delete the selected restaurant
+                                    self.delete(item: restaurant)
+                                }) {
+                                    HStack {
+                                        Text("Delete")
+                                        Image(systemName: "trash")
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    self.setFavorite(item: restaurant)
+                                }) {
+                                    HStack {
+                                        Text("Favorite")
+                                        Image(systemName: "star")
+                                    }
+                                }
+                            }
+                            .onTapGesture {
+                                showActionSheet.toggle()
+                                selectedRestaurant = restaurant
+                            }
+//                            .actionSheet(isPresented: $showActionSheet) {
+//                                ActionSheet(title: Text("What do you want to do"),
+//                                            message: nil,
+//                                            buttons: [
+//                                                .default(Text("Mark as Favorite"), action: {
+//                                                    if let selectedRestaurant = selectedRestaurant {
+//                                                        self.setFavorite(item: selectedRestaurant)
+//                                                    }
+//                                                }),
+//                                                .destructive(Text("Delete"), action: {
+//                                                    if let selectedRestaurant = selectedRestaurant {
+//                                                        self.delete(item: selectedRestaurant)
+//                                                    }
+//                                                }),
+//                                                .cancel()
+//                                            ])
+//                            }
+                            .actionSheet(item: $selectedRestaurant) { restaurant in
+                                ActionSheet(title: Text("What do you want to do"), message: nil, buttons: [
+                                    .default(Text("Mark as Favorite"), action: {
+                                        self.setFavorite(item: restaurant)
+                                    }),
+                                    .destructive(Text("Delete"), action: {
+                                        self.delete(item: restaurant)
+                                    }),
+                                    .cancel()
+                                ])
+                            }
                     }
+                }
+                .onDelete { indexSet in
+                    restaurants.remove(atOffsets: indexSet)
                 }
             }
             .navigationBarTitle("Restaurants", displayMode: .large) //.inline
+        }
+    }
+    
+    private func delete(item restaurant: Restaurant) {
+        if let index = self.restaurants.firstIndex(where: {$0.id == restaurant.id }) {
+            self.restaurants.remove(at: index)
+        }
+    }
+    
+    private func setFavorite(item restaurant: Restaurant) {
+        if let index = self.restaurants.firstIndex(where: {$0.id == restaurant.id }) {
+            self.restaurants[index].isFavorite.toggle()
+        }
+    }
+    
+    private func setCheckIn(item restaurant: Restaurant) {
+        if let index = self.restaurants.firstIndex(where: {$0.id == restaurant.id }) {
+            self.restaurants[index].isCheckIn.toggle()
         }
     }
 }

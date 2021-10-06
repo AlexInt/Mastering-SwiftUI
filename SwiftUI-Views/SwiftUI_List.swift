@@ -14,11 +14,11 @@ struct SwiftUI_List: View {
 //                Text("Item \($0)")
 //            }
 //        }
-        List(restaurants.indices) {index in
+        List(Restaurants.indices) {index in
             if (0...1).contains(index) {
-                FullImageRow(restaurant: restaurants[index])
+                FullImageRow(restaurant: Restaurants[index])
             } else {
-                BasicImageRow(restaurant: restaurants[index])
+                BasicImageRow(restaurant: Restaurants[index])
             }
         }
     }
@@ -28,9 +28,11 @@ struct Restaurant: Identifiable {
     var id = UUID()
     var name: String
     var image: String
+    var isFavorite: Bool = false
+    var isCheckIn: Bool = false
 }
 
-var restaurants = [
+var Restaurants = [
     Restaurant(name: "Cafe Deadend", image: "cafedeadend"),
     Restaurant(name: "Homei", image: "homei"),
     Restaurant(name: "Teakha", image: "teakha"),
@@ -70,6 +72,18 @@ struct BasicImageRow: View {
                 .frame(width: 40, height: 40)
                 .cornerRadius(5)
             Text(restaurant.name)
+            
+            if restaurant.isCheckIn {
+                Image(systemName: "checkmark.seal.fill")
+                    .foregroundColor(.red)
+            }
+            if restaurant.isFavorite {
+                Spacer()
+                
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
+            
         }
     }
 }
