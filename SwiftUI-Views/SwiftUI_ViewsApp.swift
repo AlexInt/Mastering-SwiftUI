@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_ViewsApp: App {
     var body: some Scene {
         WindowGroup {
-            Tinder()
+            WalletContentView()
         }
     }
 }
