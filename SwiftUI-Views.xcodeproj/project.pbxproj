@@ -16,6 +16,9 @@
 		F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */; };
 		F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71F1270DDCBD004CA48C /* DragState.swift */; };
 		F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71F3270EA53D004CA48C /* BottomSheetView.swift */; };
+		F72B71F7270EDC1F004CA48C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71F6270EDC1F004CA48C /* Trip.swift */; };
+		F72B71F9270EDC46004CA48C /* Tinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71F8270EDC46004CA48C /* Tinder.swift */; };
+		F72B71FB270EDCF8004CA48C /* TinderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71FA270EDCF8004CA48C /* TinderCardView.swift */; };
 		F731E15F2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E15E2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift */; };
 		F731E1622709BB890090D24C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E1612709BB890090D24C /* Article.swift */; };
 		F731E1642709BBCF0090D24C /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E1632709BBCF0090D24C /* ArticleDetailView.swift */; };
@@ -54,6 +57,9 @@
 		F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Animation.swift; sourceTree = "<group>"; };
 		F72B71F1270DDCBD004CA48C /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
 		F72B71F3270EA53D004CA48C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		F72B71F6270EDC1F004CA48C /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		F72B71F8270EDC46004CA48C /* Tinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinder.swift; sourceTree = "<group>"; };
+		F72B71FA270EDCF8004CA48C /* TinderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardView.swift; sourceTree = "<group>"; };
 		F731E15E2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NavigationView_article.swift; sourceTree = "<group>"; };
 		F731E1612709BB890090D24C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F731E1632709BBCF0090D24C /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F72B71F5270EAA21004CA48C /* Tinder-like */ = {
+			isa = PBXGroup;
+			children = (
+				F72B71F6270EDC1F004CA48C /* Trip.swift */,
+				F72B71F8270EDC46004CA48C /* Tinder.swift */,
+				F72B71FA270EDCF8004CA48C /* TinderCardView.swift */,
+			);
+			path = "Tinder-like";
+			sourceTree = "<group>";
+		};
 		F731E1602709BB710090D24C /* Article */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +177,7 @@
 				F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */,
 				F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */,
 				F731E173270C67250090D24C /* UserRegistrationViewModel.swift */,
+				F72B71F5270EAA21004CA48C /* Tinder-like */,
 				F731E179270DC8A20090D24C /* Gesture */,
 				F731E1602709BB710090D24C /* Article */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
@@ -249,6 +266,7 @@
 			files = (
 				F77D021D26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift in Sources */,
 				F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */,
+				F72B71FB270EDCF8004CA48C /* TinderCardView.swift in Sources */,
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
@@ -279,6 +297,8 @@
 				F731E181270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift in Sources */,
 				F731E176270DB5190090D24C /* SwiftUI_Gesture.swift in Sources */,
 				F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */,
+				F72B71F7270EDC1F004CA48C /* Trip.swift in Sources */,
+				F72B71F9270EDC46004CA48C /* Tinder.swift in Sources */,
 				F731E170270B33BE0090D24C /* SwiftUI_ContextMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

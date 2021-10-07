@@ -21,6 +21,17 @@ enum DragState {
         }
     }
     
+    var isDragging: Bool {
+        switch self {
+        case .inactive:
+            return false
+        case .pressing:
+            return false
+        case .dragging:
+            return true
+        }
+    }
+    
     var isPressing: Bool {
         switch self {
         case .dragging, .pressing:
