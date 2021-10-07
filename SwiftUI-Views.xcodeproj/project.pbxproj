@@ -14,6 +14,8 @@
 		F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */; };
 		F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */; };
 		F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */; };
+		F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71F1270DDCBD004CA48C /* DragState.swift */; };
+		F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71F3270EA53D004CA48C /* BottomSheetView.swift */; };
 		F731E15F2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E15E2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift */; };
 		F731E1622709BB890090D24C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E1612709BB890090D24C /* Article.swift */; };
 		F731E1642709BBCF0090D24C /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E1632709BBCF0090D24C /* ArticleDetailView.swift */; };
@@ -25,6 +27,12 @@
 		F731E170270B33BE0090D24C /* SwiftUI_ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */; };
 		F731E172270C5BCF0090D24C /* SwiftUI_signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */; };
 		F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E173270C67250090D24C /* UserRegistrationViewModel.swift */; };
+		F731E176270DB5190090D24C /* SwiftUI_Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E175270DB5190090D24C /* SwiftUI_Gesture.swift */; };
+		F731E178270DC5600090D24C /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E177270DC5600090D24C /* DraggableView.swift */; };
+		F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E17A270DCA8B0090D24C /* RestaurantInfo.swift */; };
+		F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E17C270DCAB20090D24C /* SwiftUI_BottomSheet.swift */; };
+		F731E17F270DCB400090D24C /* RestaurantInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E17E270DCB400090D24C /* RestaurantInfoRow.swift */; };
+		F731E181270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E180270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift */; };
 		F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */; };
 		F77D020826EDAA60008234ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D020726EDAA60008234ED /* ContentView.swift */; };
 		F77D020A26EDAA62008234ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77D020926EDAA62008234ED /* Assets.xcassets */; };
@@ -44,6 +52,8 @@
 		F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_State_Binding.swift; sourceTree = "<group>"; };
 		F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Path_Shape.swift; sourceTree = "<group>"; };
 		F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Animation.swift; sourceTree = "<group>"; };
+		F72B71F1270DDCBD004CA48C /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
+		F72B71F3270EA53D004CA48C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		F731E15E2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NavigationView_article.swift; sourceTree = "<group>"; };
 		F731E1612709BB890090D24C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F731E1632709BBCF0090D24C /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
@@ -55,6 +65,12 @@
 		F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ContextMenu.swift; sourceTree = "<group>"; };
 		F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_signup.swift; sourceTree = "<group>"; };
 		F731E173270C67250090D24C /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		F731E175270DB5190090D24C /* SwiftUI_Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Gesture.swift; sourceTree = "<group>"; };
+		F731E177270DC5600090D24C /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		F731E17A270DCA8B0090D24C /* RestaurantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfo.swift; sourceTree = "<group>"; };
+		F731E17C270DCAB20090D24C /* SwiftUI_BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BottomSheet.swift; sourceTree = "<group>"; };
+		F731E17E270DCB400090D24C /* RestaurantInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoRow.swift; sourceTree = "<group>"; };
+		F731E180270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoDetailPageView.swift; sourceTree = "<group>"; };
 		F77D020226EDAA60008234ED /* SwiftUI-Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ViewsApp.swift; sourceTree = "<group>"; };
 		F77D020726EDAA60008234ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +103,21 @@
 				F731E1632709BBCF0090D24C /* ArticleDetailView.swift */,
 			);
 			path = Article;
+			sourceTree = "<group>";
+		};
+		F731E179270DC8A20090D24C /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				F731E175270DB5190090D24C /* SwiftUI_Gesture.swift */,
+				F72B71F1270DDCBD004CA48C /* DragState.swift */,
+				F731E177270DC5600090D24C /* DraggableView.swift */,
+				F731E17A270DCA8B0090D24C /* RestaurantInfo.swift */,
+				F731E17C270DCAB20090D24C /* SwiftUI_BottomSheet.swift */,
+				F731E17E270DCB400090D24C /* RestaurantInfoRow.swift */,
+				F731E180270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift */,
+				F72B71F3270EA53D004CA48C /* BottomSheetView.swift */,
+			);
+			path = Gesture;
 			sourceTree = "<group>";
 		};
 		F77D01F926EDAA60008234ED = {
@@ -130,6 +161,7 @@
 				F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */,
 				F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */,
 				F731E173270C67250090D24C /* UserRegistrationViewModel.swift */,
+				F731E179270DC8A20090D24C /* Gesture */,
 				F731E1602709BB710090D24C /* Article */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
@@ -219,18 +251,24 @@
 				F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */,
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
+				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
 				F731E166270AAE890090D24C /* SwiftUI_Modal_Alert_Float.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
 				F731E15F2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift in Sources */,
+				F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */,
+				F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */,
+				F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */,
 				F731E172270C5BCF0090D24C /* SwiftUI_signup.swift in Sources */,
 				F731E168270AB4140090D24C /* SwiftUI_Modal.swift in Sources */,
 				F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */,
 				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,
 				F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */,
+				F731E178270DC5600090D24C /* DraggableView.swift in Sources */,
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
 				F731E16A270AE7B80090D24C /* SwiftUI_form.swift in Sources */,
 				F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */,
 				F731E1642709BBCF0090D24C /* ArticleDetailView.swift in Sources */,
+				F731E17F270DCB400090D24C /* RestaurantInfoRow.swift in Sources */,
 				F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */,
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
 				F731E1622709BB890090D24C /* Article.swift in Sources */,
@@ -238,6 +276,8 @@
 				F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */,
 				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
 				F731E16E270AF59F0090D24C /* SettingStore.swift in Sources */,
+				F731E181270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift in Sources */,
+				F731E176270DB5190090D24C /* SwiftUI_Gesture.swift in Sources */,
 				F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */,
 				F731E170270B33BE0090D24C /* SwiftUI_ContextMenu.swift in Sources */,
 			);

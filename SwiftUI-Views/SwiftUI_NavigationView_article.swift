@@ -10,11 +10,11 @@ import SwiftUI
 struct SwiftUI_NavigationView_article: View {
     
     init() {
-            // Set selected (onTapped) background color of cell.
-            let color = UIView()
-            color.backgroundColor = UIColor.red
-            UITableViewCell.appearance().selectedBackgroundView = color
-        }
+        // Set selected (onTapped) background color of cell.
+        let color = UIView()
+        color.backgroundColor = UIColor.red
+        UITableViewCell.appearance().selectedBackgroundView = color
+    }
     
     var body: some View {
         
