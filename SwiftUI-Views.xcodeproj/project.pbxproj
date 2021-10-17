@@ -57,6 +57,13 @@
 		F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021826EE0FA1008234ED /* SwiftUI_stacks.swift */; };
 		F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021A26EE1ACD008234ED /* SwiftUI_ScrollView.swift */; };
 		F77D021D26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D021C26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift */; };
+		F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9242271C33DE00A9379B /* ToDoContentView.swift */; };
+		F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9245271C341F00A9379B /* CheckboxStyle.swift */; };
+		F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9247271C342A00A9379B /* NewToDoView.swift */; };
+		F77F924B271C344900A9379B /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F924A271C344900A9379B /* ToDoItem.swift */; };
+		F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F924C271C3AE600A9379B /* KeyboardResponder.swift */; };
+		F77F9251271C612400A9379B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9250271C612400A9379B /* Persistence.swift */; };
+		F77F9254271C635E00A9379B /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +119,13 @@
 		F77D021826EE0FA1008234ED /* SwiftUI_stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_stacks.swift; sourceTree = "<group>"; };
 		F77D021A26EE1ACD008234ED /* SwiftUI_ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ScrollView.swift; sourceTree = "<group>"; };
 		F77D021C26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Buttons_Labels_Gradient.swift; sourceTree = "<group>"; };
+		F77F9242271C33DE00A9379B /* ToDoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoContentView.swift; sourceTree = "<group>"; };
+		F77F9245271C341F00A9379B /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		F77F9247271C342A00A9379B /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		F77F924A271C344900A9379B /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		F77F924C271C3AE600A9379B /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		F77F9250271C612400A9379B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F77F9253271C635E00A9379B /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,11 +255,12 @@
 				F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */,
 				F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */,
 				F731E173270C67250090D24C /* UserRegistrationViewModel.swift */,
-				F72B720D27130128004CA48C /* KivaLoan */,
 				F731E179270DC8A20090D24C /* Gesture */,
 				F731E1602709BB710090D24C /* Article */,
 				F72B71F5270EAA21004CA48C /* Tinder-like */,
 				F72B71FC270EF789004CA48C /* Apple-Wallet */,
+				F72B720D27130128004CA48C /* KivaLoan */,
+				F77F9241271C33C500A9379B /* ToDoApp */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
@@ -285,6 +300,36 @@
 				F72B724C271C266B004CA48C /* LoanFilterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F77F9241271C33C500A9379B /* ToDoApp */ = {
+			isa = PBXGroup;
+			children = (
+				F77F9249271C343800A9379B /* Model */,
+				F77F9244271C33F400A9379B /* Views */,
+			);
+			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		F77F9244271C33F400A9379B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F77F9242271C33DE00A9379B /* ToDoContentView.swift */,
+				F77F9245271C341F00A9379B /* CheckboxStyle.swift */,
+				F77F9247271C342A00A9379B /* NewToDoView.swift */,
+				F77F924C271C3AE600A9379B /* KeyboardResponder.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F77F9249271C343800A9379B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F77F924A271C344900A9379B /* ToDoItem.swift */,
+				F77F9250271C612400A9379B /* Persistence.swift */,
+				F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,8 +407,10 @@
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
+				F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */,
 				F731E166270AAE890090D24C /* SwiftUI_Modal_Alert_Float.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
+				F77F9251271C612400A9379B /* Persistence.swift in Sources */,
 				F72B71FF270EF7BE004CA48C /* Card.swift in Sources */,
 				F731E15F2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift in Sources */,
 				F72B724B271C258E004CA48C /* LoanContentView.swift in Sources */,
@@ -377,9 +424,11 @@
 				F72B7204270EF811004CA48C /* WalletContentView.swift in Sources */,
 				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,
 				F72B7206270EF81E004CA48C /* TransactionHistoryView.swift in Sources */,
+				F77F924B271C344900A9379B /* ToDoItem.swift in Sources */,
 				F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */,
 				F731E178270DC5600090D24C /* DraggableView.swift in Sources */,
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
+				F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */,
 				F72B7211271301F8004CA48C /* LoanStore.swift in Sources */,
 				F72B720F27130139004CA48C /* Loan.swift in Sources */,
 				F72B724D271C266B004CA48C /* LoanFilterView.swift in Sources */,
@@ -390,12 +439,15 @@
 				F731E1642709BBCF0090D24C /* ArticleDetailView.swift in Sources */,
 				F731E17F270DCB400090D24C /* RestaurantInfoRow.swift in Sources */,
 				F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */,
+				F77F9254271C635E00A9379B /* ToDoList.xcdatamodeld in Sources */,
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
 				F731E1622709BB890090D24C /* Article.swift in Sources */,
 				F72B7249271C242D004CA48C /* LoanCellView.swift in Sources */,
 				F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */,
+				F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */,
 				F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */,
 				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
+				F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */,
 				F72B7201270EF7E5004CA48C /* Transaction.swift in Sources */,
 				F731E16E270AF59F0090D24C /* SettingStore.swift in Sources */,
 				F731E181270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift in Sources */,
@@ -592,6 +644,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F77F9253271C635E00A9379B /* ToDoList.xcdatamodel */,
+			);
+			currentVersion = F77F9253271C635E00A9379B /* ToDoList.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F77D01FA26EDAA60008234ED /* Project object */;
 }
