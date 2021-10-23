@@ -12,16 +12,22 @@ struct ToDoContentView: View {
 //    @State var todoItems: [ToDoItem] = []
     
     //Using @FetchRequest to fetch records
-    @FetchRequest(entity: ToDoItem.entity(),
-                  sortDescriptors: [NSSortDescriptor(keyPath: \ToDoItem.priorityNum, ascending: false)])
-    var todoItems: FetchedResults<ToDoItem>
+    // the fetch request will only fetch the to-do items that its name contains the keyword "get". The [c] following CONTAINS means that the search is case insensitive.
+//    @FetchRequest(
+//        entity: ToDoItem.entity(),
+//        sortDescriptors: [NSSortDescriptor(keyPath: \ToDoItem.priorityNum, ascending: false)],
+//        predicate: NSPredicate(format: "name CONTAINS[c] %@", "get")
+//    )
+//    var todoItems: FetchedResults<ToDoItem>
     
     @State private var newItemName: String = ""
     @State private var newItemPriority: Priority = .normal
     
     @State private var showNewTask = false
     
-    @Environment(\.managedObjectContext) var context
+//    @Environment(\.managedObjectContext) var context
+    
+    @State private var searchText = ""
     
     var body: some View {
         
@@ -29,44 +35,35 @@ struct ToDoContentView: View {
             
             VStack {
                 
-                HStack {
-                    Text("ToDo List")
-                        .font(.system(size: 40, weight: .black, design: .rounded))
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        self.showNewTask = true
-                        
-                    }) {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.purple)
-                    }
-                }
-                .padding()
+                ToDoTitleView(showNewTask: $showNewTask)
+                    .padding()
                 
-                List {
-                    
-                    ForEach(todoItems) { todoItem in
-                        ToDoListRow(todoItem: todoItem)
-                    }
-//                    .onDelete { indexSet in
-//                        self.deleteTask(indexSet: indexSet)
+                SearchBar(searchText: $searchText)
+                    .padding(.top, -20)
+                
+//                List {
+//                    //ForEach(todoItems.filter{searchText.isEmpty ? true : $0.name.contains(searchText)}) {
+//                    ForEach(todoItems) { todoItem in
+//                        ToDoListRow(todoItem: todoItem)
 //                    }
-                    //same with above
-                    .onDelete(perform: deleteTask)
-                    
-                }
+////                    .onDelete { indexSet in
+////                        self.deleteTask(indexSet: indexSet)
+////                    }
+//                    //same with above
+//                    .onDelete(perform: deleteTask)
+//
+//                }
+                
+                FilteredList($searchText)
             }
             .rotation3DEffect(Angle(degrees: showNewTask ? 5 : 0), axis: (x: 1, y: 0, z: 0))
             .offset(y: showNewTask ? -50 : 0)
             .animation(.easeOut)
             
             // If there is no data, show an empty view
-            if todoItems.count == 0 {
-                NoDataView()
-            }
+//            if todoItems.count == 0 {
+//                ToDoNoDataView()
+//            }
             
             // Display the "Add new todo" view
             if showNewTask {
@@ -85,20 +82,20 @@ struct ToDoContentView: View {
     
     
     //Deleting an item from database
-    private func deleteTask(indexSet: IndexSet) {
-        for index in indexSet {
-            let itemToDelete = todoItems[index]
-            context.delete(itemToDelete)
-        }
-        
-        DispatchQueue.main.async {
-            do {
-                try context.save()
-            } catch {
-                print(error)
-            }
-        }
-    }
+//    private func deleteTask(indexSet: IndexSet) {
+//        for index in indexSet {
+//            let itemToDelete = todoItems[index]
+//            context.delete(itemToDelete)
+//        }
+//
+//        DispatchQueue.main.async {
+//            do {
+//                try context.save()
+//            } catch {
+//                print(error)
+//            }
+//        }
+//    }
 }
 
 //FOR darkening the list view when add to do item
@@ -116,7 +113,7 @@ struct ToDoBlankView : View {
     }
 }
 
-struct NoDataView: View {
+struct ToDoNoDataView: View {
     var body: some View {
         Image("welcome")
             .resizable()
@@ -167,5 +164,29 @@ struct ToDoContentView_Previews: PreviewProvider {
     static var previews: some View {
         ToDoContentView()
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
+}
+
+struct ToDoTitleView: View {
+    
+    @Binding var showNewTask: Bool
+    
+    var body: some View {
+        HStack {
+            Text("ToDo List")
+                .font(.system(size: 40, weight: .black, design: .rounded))
+            
+            Spacer()
+            
+            Button(action: {
+                self.showNewTask = true
+                
+            }) {
+                Image(systemName: "plus.circle.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.purple)
+            }
+        }
+        
     }
 }

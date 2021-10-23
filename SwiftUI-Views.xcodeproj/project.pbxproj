@@ -64,6 +64,8 @@
 		F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F924C271C3AE600A9379B /* KeyboardResponder.swift */; };
 		F77F9251271C612400A9379B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9250271C612400A9379B /* Persistence.swift */; };
 		F77F9254271C635E00A9379B /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */; };
+		F77F92592724269200A9379B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F92582724269200A9379B /* SearchBar.swift */; };
+		F77F925B2724336600A9379B /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F925A2724336600A9379B /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +128,8 @@
 		F77F924C271C3AE600A9379B /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		F77F9250271C612400A9379B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F77F9253271C635E00A9379B /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		F77F92582724269200A9379B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		F77F925A2724336600A9379B /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +309,7 @@
 		F77F9241271C33C500A9379B /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				F77F92572724267600A9379B /* UISearchBar */,
 				F77F9249271C343800A9379B /* Model */,
 				F77F9244271C33F400A9379B /* Views */,
 			);
@@ -315,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				F77F9242271C33DE00A9379B /* ToDoContentView.swift */,
+				F77F925A2724336600A9379B /* FilteredList.swift */,
 				F77F9245271C341F00A9379B /* CheckboxStyle.swift */,
 				F77F9247271C342A00A9379B /* NewToDoView.swift */,
 				F77F924C271C3AE600A9379B /* KeyboardResponder.swift */,
@@ -330,6 +336,14 @@
 				F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F77F92572724267600A9379B /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				F77F92582724269200A9379B /* SearchBar.swift */,
+			);
+			path = UISearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +436,7 @@
 				F731E168270AB4140090D24C /* SwiftUI_Modal.swift in Sources */,
 				F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */,
 				F72B7204270EF811004CA48C /* WalletContentView.swift in Sources */,
+				F77F92592724269200A9379B /* SearchBar.swift in Sources */,
 				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,
 				F72B7206270EF81E004CA48C /* TransactionHistoryView.swift in Sources */,
 				F77F924B271C344900A9379B /* ToDoItem.swift in Sources */,
@@ -444,6 +459,7 @@
 				F731E1622709BB890090D24C /* Article.swift in Sources */,
 				F72B7249271C242D004CA48C /* LoanCellView.swift in Sources */,
 				F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */,
+				F77F925B2724336600A9379B /* FilteredList.swift in Sources */,
 				F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */,
 				F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */,
 				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
