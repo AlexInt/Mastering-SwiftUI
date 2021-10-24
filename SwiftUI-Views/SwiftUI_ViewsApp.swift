@@ -16,8 +16,10 @@ struct SwiftUI_ViewsApp: App {
             /*
              we inject the managed object context into the environment of ContentView . This allows us to easily access the context in the content view for managing the data in the database.
              */
-            ToDoContentView()
-                .environment(\.managedObjectContext, persistenseController.container.viewContext)
+//            ToDoContentView()
+//                .environment(\.managedObjectContext, persistenseController.container.viewContext)
+            
+            CameraContentView()
         }
     }
 }

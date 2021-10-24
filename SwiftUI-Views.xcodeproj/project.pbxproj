@@ -66,6 +66,10 @@
 		F77F9254271C635E00A9379B /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */; };
 		F77F92592724269200A9379B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F92582724269200A9379B /* SearchBar.swift */; };
 		F77F925B2724336600A9379B /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F925A2724336600A9379B /* FilteredList.swift */; };
+		F77F92722725588600A9379B /* AutoResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F92712725588600A9379B /* AutoResize.swift */; };
+		F77F927627255E3E00A9379B /* CameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F927527255E3E00A9379B /* CameraContentView.swift */; };
+		F782BAA027256C7500EF3BA2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782BA9F27256C7500EF3BA2 /* CameraView.swift */; };
+		F782BAA227256CA600EF3BA2 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782BAA127256CA600EF3BA2 /* CameraModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +134,10 @@
 		F77F9253271C635E00A9379B /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		F77F92582724269200A9379B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		F77F925A2724336600A9379B /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		F77F92712725588600A9379B /* AutoResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResize.swift; sourceTree = "<group>"; };
+		F77F927527255E3E00A9379B /* CameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraContentView.swift; sourceTree = "<group>"; };
+		F782BA9F27256C7500EF3BA2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		F782BAA127256CA600EF3BA2 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,12 +267,14 @@
 				F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */,
 				F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */,
 				F731E173270C67250090D24C /* UserRegistrationViewModel.swift */,
+				F77F927327255DBF00A9379B /* handleKeyboard */,
 				F731E179270DC8A20090D24C /* Gesture */,
 				F731E1602709BB710090D24C /* Article */,
 				F72B71F5270EAA21004CA48C /* Tinder-like */,
 				F72B71FC270EF789004CA48C /* Apple-Wallet */,
 				F72B720D27130128004CA48C /* KivaLoan */,
 				F77F9241271C33C500A9379B /* ToDoApp */,
+				F77F927427255DE600A9379B /* Camera */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
@@ -323,7 +333,6 @@
 				F77F925A2724336600A9379B /* FilteredList.swift */,
 				F77F9245271C341F00A9379B /* CheckboxStyle.swift */,
 				F77F9247271C342A00A9379B /* NewToDoView.swift */,
-				F77F924C271C3AE600A9379B /* KeyboardResponder.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +353,25 @@
 				F77F92582724269200A9379B /* SearchBar.swift */,
 			);
 			path = UISearchBar;
+			sourceTree = "<group>";
+		};
+		F77F927327255DBF00A9379B /* handleKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F77F92712725588600A9379B /* AutoResize.swift */,
+				F77F924C271C3AE600A9379B /* KeyboardResponder.swift */,
+			);
+			path = handleKeyboard;
+			sourceTree = "<group>";
+		};
+		F77F927427255DE600A9379B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F77F927527255E3E00A9379B /* CameraContentView.swift */,
+				F782BA9F27256C7500EF3BA2 /* CameraView.swift */,
+				F782BAA127256CA600EF3BA2 /* CameraModel.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +446,7 @@
 				F77D021D26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift in Sources */,
 				F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */,
 				F72B71FB270EDCF8004CA48C /* TinderCardView.swift in Sources */,
+				F782BAA027256C7500EF3BA2 /* CameraView.swift in Sources */,
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
@@ -438,6 +467,8 @@
 				F72B7204270EF811004CA48C /* WalletContentView.swift in Sources */,
 				F77F92592724269200A9379B /* SearchBar.swift in Sources */,
 				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,
+				F77F927627255E3E00A9379B /* CameraContentView.swift in Sources */,
+				F782BAA227256CA600EF3BA2 /* CameraModel.swift in Sources */,
 				F72B7206270EF81E004CA48C /* TransactionHistoryView.swift in Sources */,
 				F77F924B271C344900A9379B /* ToDoItem.swift in Sources */,
 				F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */,
@@ -449,6 +480,7 @@
 				F72B724D271C266B004CA48C /* LoanFilterView.swift in Sources */,
 				F72B720A270EFC3C004CA48C /* SwiftUI_zIndex.swift in Sources */,
 				F731E16A270AE7B80090D24C /* SwiftUI_form.swift in Sources */,
+				F77F92722725588600A9379B /* AutoResize.swift in Sources */,
 				F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */,
 				F72B720C270F08C3004CA48C /* CardDragState.swift in Sources */,
 				F731E1642709BBCF0090D24C /* ArticleDetailView.swift in Sources */,
@@ -601,7 +633,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Views/Preview Content\"";
-				DEVELOPMENT_TEAM = YY4M4NX34G;
+				DEVELOPMENT_TEAM = C4N9FHZHPR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Views/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -609,7 +641,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lonely.SwiftUI-Views";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guakamoli.avengine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,7 +655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Views/Preview Content\"";
-				DEVELOPMENT_TEAM = YY4M4NX34G;
+				DEVELOPMENT_TEAM = C4N9FHZHPR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Views/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -631,7 +663,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lonely.SwiftUI-Views";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guakamoli.avengine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
