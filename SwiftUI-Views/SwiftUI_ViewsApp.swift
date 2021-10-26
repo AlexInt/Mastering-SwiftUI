@@ -19,7 +19,7 @@ struct SwiftUI_ViewsApp: App {
 //            ToDoContentView()
 //                .environment(\.managedObjectContext, persistenseController.container.viewContext)
             
-            CameraContentView()
+            SwiftUI_AnimateGradient()
         }
     }
 }

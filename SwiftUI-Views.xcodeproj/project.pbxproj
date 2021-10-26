@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */; };
+		BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */; };
 		F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070326F9957D00AC66BC /* SwiftUI_Transition.swift */; };
 		F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070526F9D4A300AC66BC /* SwiftUI_List.swift */; };
 		F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070726F9E29F00AC66BC /* ArticleView.swift */; };
@@ -73,6 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Webview.swift; sourceTree = "<group>"; };
+		BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimateGradient.swift; sourceTree = "<group>"; };
 		F706070326F9957D00AC66BC /* SwiftUI_Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Transition.swift; sourceTree = "<group>"; };
 		F706070526F9D4A300AC66BC /* SwiftUI_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_List.swift; sourceTree = "<group>"; };
 		F706070726F9E29F00AC66BC /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 				F731E16F270B33BE0090D24C /* SwiftUI_ContextMenu.swift */,
 				F731E171270C5BCF0090D24C /* SwiftUI_signup.swift */,
 				F731E173270C67250090D24C /* UserRegistrationViewModel.swift */,
+				BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */,
+				BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */,
 				F77F927327255DBF00A9379B /* handleKeyboard */,
 				F731E179270DC8A20090D24C /* Gesture */,
 				F731E1602709BB710090D24C /* Article */,
@@ -450,6 +456,7 @@
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
+				BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */,
 				F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */,
 				F731E166270AAE890090D24C /* SwiftUI_Modal_Alert_Float.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
@@ -460,6 +467,7 @@
 				F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */,
 				F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */,
 				F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */,
+				BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */,
 				F731E172270C5BCF0090D24C /* SwiftUI_signup.swift in Sources */,
 				F72B7208270EF92D004CA48C /* AppleCardView.swift in Sources */,
 				F731E168270AB4140090D24C /* SwiftUI_Modal.swift in Sources */,
