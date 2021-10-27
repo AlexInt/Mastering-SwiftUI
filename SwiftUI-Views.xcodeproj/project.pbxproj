@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */; };
 		BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */; };
+		BFD1B3FB27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */; };
 		F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070326F9957D00AC66BC /* SwiftUI_Transition.swift */; };
 		F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070526F9D4A300AC66BC /* SwiftUI_List.swift */; };
 		F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070726F9E29F00AC66BC /* ArticleView.swift */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Webview.swift; sourceTree = "<group>"; };
 		BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimateGradient.swift; sourceTree = "<group>"; };
+		BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NamespaceAnimation.swift; sourceTree = "<group>"; };
 		F706070326F9957D00AC66BC /* SwiftUI_Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Transition.swift; sourceTree = "<group>"; };
 		F706070526F9D4A300AC66BC /* SwiftUI_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_List.swift; sourceTree = "<group>"; };
 		F706070726F9E29F00AC66BC /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				F731E173270C67250090D24C /* UserRegistrationViewModel.swift */,
 				BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */,
 				BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */,
+				BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */,
 				F77F927327255DBF00A9379B /* handleKeyboard */,
 				F731E179270DC8A20090D24C /* Gesture */,
 				F731E1602709BB710090D24C /* Article */,
@@ -485,6 +488,7 @@
 				F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */,
 				F72B7211271301F8004CA48C /* LoanStore.swift in Sources */,
 				F72B720F27130139004CA48C /* Loan.swift in Sources */,
+				BFD1B3FB27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift in Sources */,
 				F72B724D271C266B004CA48C /* LoanFilterView.swift in Sources */,
 				F72B720A270EFC3C004CA48C /* SwiftUI_zIndex.swift in Sources */,
 				F731E16A270AE7B80090D24C /* SwiftUI_form.swift in Sources */,
@@ -649,7 +653,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guakamoli.avengine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonely.swiftuiviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -671,7 +675,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guakamoli.avengine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonely.swiftuiviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
