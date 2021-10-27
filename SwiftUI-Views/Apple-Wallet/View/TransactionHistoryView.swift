@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TransactionHistoryView: View {
     
-    var transactions: [Transaction]
+    var transactions: [CardTransaction]
     
     var body: some View {
         
@@ -32,7 +32,7 @@ struct TransactionHistoryView: View {
 
 struct TransactionView: View {
     
-    var transaction: Transaction
+    var transaction: CardTransaction
     
     var body: some View {
         RoundedRectangle(cornerRadius: 20)

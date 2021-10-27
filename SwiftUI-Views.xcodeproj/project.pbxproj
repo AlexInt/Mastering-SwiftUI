@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF800C6A27292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */; };
+		BF800C6C272933DB00E13BB1 /* SwiftUI_AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */; };
 		BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */; };
 		BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */; };
 		BFD1B3FB27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */; };
@@ -23,7 +25,7 @@
 		F72B71F9270EDC46004CA48C /* Tinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71F8270EDC46004CA48C /* Tinder.swift */; };
 		F72B71FB270EDCF8004CA48C /* TinderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71FA270EDCF8004CA48C /* TinderCardView.swift */; };
 		F72B71FF270EF7BE004CA48C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B71FE270EF7BE004CA48C /* Card.swift */; };
-		F72B7201270EF7E5004CA48C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B7200270EF7E5004CA48C /* Transaction.swift */; };
+		F72B7201270EF7E5004CA48C /* CardTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B7200270EF7E5004CA48C /* CardTransaction.swift */; };
 		F72B7204270EF811004CA48C /* WalletContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B7203270EF811004CA48C /* WalletContentView.swift */; };
 		F72B7206270EF81E004CA48C /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B7205270EF81E004CA48C /* TransactionHistoryView.swift */; };
 		F72B7208270EF92D004CA48C /* AppleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B7207270EF92D004CA48C /* AppleCardView.swift */; };
@@ -76,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimatedNaviMenu.swift; sourceTree = "<group>"; };
+		BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AsyncImage.swift; sourceTree = "<group>"; };
 		BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Webview.swift; sourceTree = "<group>"; };
 		BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimateGradient.swift; sourceTree = "<group>"; };
 		BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NamespaceAnimation.swift; sourceTree = "<group>"; };
@@ -92,7 +96,7 @@
 		F72B71F8270EDC46004CA48C /* Tinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinder.swift; sourceTree = "<group>"; };
 		F72B71FA270EDCF8004CA48C /* TinderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardView.swift; sourceTree = "<group>"; };
 		F72B71FE270EF7BE004CA48C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		F72B7200270EF7E5004CA48C /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		F72B7200270EF7E5004CA48C /* CardTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransaction.swift; sourceTree = "<group>"; };
 		F72B7203270EF811004CA48C /* WalletContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletContentView.swift; sourceTree = "<group>"; };
 		F72B7205270EF81E004CA48C /* TransactionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
 		F72B7207270EF92D004CA48C /* AppleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCardView.swift; sourceTree = "<group>"; };
@@ -181,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F72B71FE270EF7BE004CA48C /* Card.swift */,
-				F72B7200270EF7E5004CA48C /* Transaction.swift */,
+				F72B7200270EF7E5004CA48C /* CardTransaction.swift */,
 				F72B720B270F08C3004CA48C /* CardDragState.swift */,
 			);
 			path = Model;
@@ -276,6 +280,8 @@
 				BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */,
 				BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */,
 				BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */,
+				BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */,
+				BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */,
 				F77F927327255DBF00A9379B /* handleKeyboard */,
 				F731E179270DC8A20090D24C /* Gesture */,
 				F731E1602709BB710090D24C /* Article */,
@@ -452,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF800C6C272933DB00E13BB1 /* SwiftUI_AsyncImage.swift in Sources */,
 				F77D021D26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift in Sources */,
 				F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */,
 				F72B71FB270EDCF8004CA48C /* TinderCardView.swift in Sources */,
@@ -482,6 +489,7 @@
 				F782BAA227256CA600EF3BA2 /* CameraModel.swift in Sources */,
 				F72B7206270EF81E004CA48C /* TransactionHistoryView.swift in Sources */,
 				F77F924B271C344900A9379B /* ToDoItem.swift in Sources */,
+				BF800C6A27292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift in Sources */,
 				F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */,
 				F731E178270DC5600090D24C /* DraggableView.swift in Sources */,
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
@@ -508,7 +516,7 @@
 				F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */,
 				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
 				F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */,
-				F72B7201270EF7E5004CA48C /* Transaction.swift in Sources */,
+				F72B7201270EF7E5004CA48C /* CardTransaction.swift in Sources */,
 				F731E16E270AF59F0090D24C /* SettingStore.swift in Sources */,
 				F731E181270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift in Sources */,
 				F731E176270DB5190090D24C /* SwiftUI_Gesture.swift in Sources */,
