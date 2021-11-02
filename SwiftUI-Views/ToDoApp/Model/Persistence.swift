@@ -7,9 +7,9 @@
 
 /*
  
- 1. Createanentityinthemanagedobjectmodel(i.e..xcdatamodeld)
+ 1. Create an entity in the managed object model(i.e..xcdatamodeld)
  2. Define a managed object, which inherits from NSManagedObject , to associate with the entity
- 3. Intheviewsthatneedstosaveandupdatethedata,getthemanagedobjectcontext from the environment using @Environment like this:
+ 3. In the views that needs to save and update the data, get the managed object context from the environment using @Environment like this:
                     ` @Environment(\.managedObjectContext) var context`
  
  And then create the managed object and use the save method of the context to add the object to the database.

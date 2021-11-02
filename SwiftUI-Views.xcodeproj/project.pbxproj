@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF800C6A27292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */; };
 		BF800C6C272933DB00E13BB1 /* SwiftUI_AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */; };
+		BF896AD327314C8A00115A80 /* ToDoSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AD227314C8A00115A80 /* ToDoSearchBar.swift */; };
 		BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */; };
 		BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */; };
 		BFD1B3FB27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */; };
@@ -80,6 +81,7 @@
 /* Begin PBXFileReference section */
 		BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimatedNaviMenu.swift; sourceTree = "<group>"; };
 		BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AsyncImage.swift; sourceTree = "<group>"; };
+		BF896AD227314C8A00115A80 /* ToDoSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSearchBar.swift; sourceTree = "<group>"; };
 		BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Webview.swift; sourceTree = "<group>"; };
 		BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimateGradient.swift; sourceTree = "<group>"; };
 		BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NamespaceAnimation.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				F77F92582724269200A9379B /* SearchBar.swift */,
+				BF896AD227314C8A00115A80 /* ToDoSearchBar.swift */,
 			);
 			path = UISearchBar;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				F72B7208270EF92D004CA48C /* AppleCardView.swift in Sources */,
 				F731E168270AB4140090D24C /* SwiftUI_Modal.swift in Sources */,
 				F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */,
+				BF896AD327314C8A00115A80 /* ToDoSearchBar.swift in Sources */,
 				F72B7204270EF811004CA48C /* WalletContentView.swift in Sources */,
 				F77F92592724269200A9379B /* SearchBar.swift in Sources */,
 				F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */,

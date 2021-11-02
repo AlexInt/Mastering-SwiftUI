@@ -28,7 +28,9 @@ struct SearchBar: UIViewRepresentable {
     }
     
     /*
-     If you need to work with delegate in UIKit and communicate back to SwiftUI, you have to implement the makeCoordinator method and provide a Coordinator instance. This Coordinator acts as a bridge between UIView's delegate and SwiftUI.
+     If you need to work with delegate in UIKit and communicate back to SwiftUI,
+     you have to implement the makeCoordinator method and provide a Coordinator instance.
+     This Coordinator acts as a bridge between UIView's delegate and SwiftUI.
      */
 
     func makeCoordinator() -> Coordinator {

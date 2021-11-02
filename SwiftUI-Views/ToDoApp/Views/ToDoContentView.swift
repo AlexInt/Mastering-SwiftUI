@@ -38,7 +38,8 @@ struct ToDoContentView: View {
                 ToDoTitleView(showNewTask: $showNewTask)
                     .padding()
                 
-                SearchBar(searchText: $searchText)
+//                SearchBar(searchText: $searchText)
+                ToDoSearchBar(text: $searchText)
                     .padding(.top, -20)
                 
 //                List {
