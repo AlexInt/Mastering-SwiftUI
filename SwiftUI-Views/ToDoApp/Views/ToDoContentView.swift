@@ -164,7 +164,7 @@ struct ToDoListRow: View {
 struct ToDoContentView_Previews: PreviewProvider {
     static var previews: some View {
         ToDoContentView()
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environment(\.managedObjectContext, ToDoPersistenceController.preview.container.viewContext)
     }
 }
 

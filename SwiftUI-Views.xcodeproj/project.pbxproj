@@ -10,6 +10,19 @@
 		BF800C6A27292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */; };
 		BF800C6C272933DB00E13BB1 /* SwiftUI_AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */; };
 		BF896AD327314C8A00115A80 /* ToDoSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AD227314C8A00115A80 /* ToDoSearchBar.swift */; };
+		BF896AD727315E9A00115A80 /* PFinanceStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF896AD527315E9A00115A80 /* PFinanceStore.xcdatamodeld */; };
+		BF896AE227315EE000115A80 /* NumberFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AE127315EE000115A80 /* NumberFormatter+Ext.swift */; };
+		BF896AE327315EE000115A80 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AE027315EE000115A80 /* Date+Ext.swift */; };
+		BF896AE727315F0600115A80 /* PaymentActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AE527315F0600115A80 /* PaymentActivity.swift */; };
+		BF896AE827315F0600115A80 /* PFPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AE627315F0600115A80 /* PFPersistence.swift */; };
+		BF896AF027315F2A00115A80 /* PaymentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AEB27315F2A00115A80 /* PaymentDetailView.swift */; };
+		BF896AF127315F2A00115A80 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AED27315F2A00115A80 /* BottomSheet.swift */; };
+		BF896AF227315F2A00115A80 /* PaymentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AEE27315F2A00115A80 /* PaymentFormView.swift */; };
+		BF896AF327315F2A00115A80 /* PFBlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AEC27315F2A00115A80 /* PFBlankView.swift */; };
+		BF896AF427315F2A00115A80 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AEA27315F2A00115A80 /* DashboardView.swift */; };
+		BF896AF527315F2A00115A80 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AEF27315F2A00115A80 /* KeyboardAdaptive.swift */; };
+		BF896AFA27315F6800115A80 /* PaymentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AF827315F6800115A80 /* PaymentDetailViewModel.swift */; };
+		BF896AFB27315F6800115A80 /* PaymentFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF896AF927315F6800115A80 /* PaymentFormViewModel.swift */; };
 		BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */; };
 		BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */; };
 		BFD1B3FB27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */; };
@@ -68,7 +81,7 @@
 		F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9247271C342A00A9379B /* NewToDoView.swift */; };
 		F77F924B271C344900A9379B /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F924A271C344900A9379B /* ToDoItem.swift */; };
 		F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F924C271C3AE600A9379B /* KeyboardResponder.swift */; };
-		F77F9251271C612400A9379B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9250271C612400A9379B /* Persistence.swift */; };
+		F77F9251271C612400A9379B /* ToDoPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9250271C612400A9379B /* ToDoPersistence.swift */; };
 		F77F9254271C635E00A9379B /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */; };
 		F77F92592724269200A9379B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F92582724269200A9379B /* SearchBar.swift */; };
 		F77F925B2724336600A9379B /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F925A2724336600A9379B /* FilteredList.swift */; };
@@ -82,6 +95,19 @@
 		BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimatedNaviMenu.swift; sourceTree = "<group>"; };
 		BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AsyncImage.swift; sourceTree = "<group>"; };
 		BF896AD227314C8A00115A80 /* ToDoSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSearchBar.swift; sourceTree = "<group>"; };
+		BF896AD627315E9A00115A80 /* PFinanceStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PFinanceStore.xcdatamodel; sourceTree = "<group>"; };
+		BF896AE027315EE000115A80 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		BF896AE127315EE000115A80 /* NumberFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Ext.swift"; sourceTree = "<group>"; };
+		BF896AE527315F0600115A80 /* PaymentActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentActivity.swift; sourceTree = "<group>"; };
+		BF896AE627315F0600115A80 /* PFPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFPersistence.swift; sourceTree = "<group>"; };
+		BF896AEA27315F2A00115A80 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		BF896AEB27315F2A00115A80 /* PaymentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailView.swift; sourceTree = "<group>"; };
+		BF896AEC27315F2A00115A80 /* PFBlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFBlankView.swift; sourceTree = "<group>"; };
+		BF896AED27315F2A00115A80 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		BF896AEE27315F2A00115A80 /* PaymentFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormView.swift; sourceTree = "<group>"; };
+		BF896AEF27315F2A00115A80 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		BF896AF827315F6800115A80 /* PaymentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailViewModel.swift; sourceTree = "<group>"; };
+		BF896AF927315F6800115A80 /* PaymentFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormViewModel.swift; sourceTree = "<group>"; };
 		BFA5FC7527281B49004C139A /* SwiftUI_Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Webview.swift; sourceTree = "<group>"; };
 		BFA5FC772728210F004C139A /* SwiftUI_AnimateGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimateGradient.swift; sourceTree = "<group>"; };
 		BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NamespaceAnimation.swift; sourceTree = "<group>"; };
@@ -142,7 +168,7 @@
 		F77F9247271C342A00A9379B /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 		F77F924A271C344900A9379B /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F77F924C271C3AE600A9379B /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
-		F77F9250271C612400A9379B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F77F9250271C612400A9379B /* ToDoPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoPersistence.swift; sourceTree = "<group>"; };
 		F77F9253271C635E00A9379B /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		F77F92582724269200A9379B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		F77F925A2724336600A9379B /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
@@ -163,6 +189,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF896AD4273152D900115A80 /* FinanceApp */ = {
+			isa = PBXGroup;
+			children = (
+				BF896AFC27315F7200115A80 /* ViewModel */,
+				BF896AF727315F5100115A80 /* View */,
+				BF896AE427315EE900115A80 /* Extension */,
+				BF896AE927315F0F00115A80 /* Model */,
+				BF896AD527315E9A00115A80 /* PFinanceStore.xcdatamodeld */,
+			);
+			path = FinanceApp;
+			sourceTree = "<group>";
+		};
+		BF896AE427315EE900115A80 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF896AE027315EE000115A80 /* Date+Ext.swift */,
+				BF896AE127315EE000115A80 /* NumberFormatter+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF896AE927315F0F00115A80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF896AE527315F0600115A80 /* PaymentActivity.swift */,
+				BF896AE627315F0600115A80 /* PFPersistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF896AF727315F5100115A80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF896AEC27315F2A00115A80 /* PFBlankView.swift */,
+				BF896AED27315F2A00115A80 /* BottomSheet.swift */,
+				BF896AEA27315F2A00115A80 /* DashboardView.swift */,
+				BF896AEF27315F2A00115A80 /* KeyboardAdaptive.swift */,
+				BF896AEB27315F2A00115A80 /* PaymentDetailView.swift */,
+				BF896AEE27315F2A00115A80 /* PaymentFormView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF896AFC27315F7200115A80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF896AF827315F6800115A80 /* PaymentDetailViewModel.swift */,
+				BF896AF927315F6800115A80 /* PaymentFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F72B71F5270EAA21004CA48C /* Tinder-like */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +370,7 @@
 				F72B720D27130128004CA48C /* KivaLoan */,
 				F77F9241271C33C500A9379B /* ToDoApp */,
 				F77F927427255DE600A9379B /* Camera */,
+				BF896AD4273152D900115A80 /* FinanceApp */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
@@ -358,7 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				F77F924A271C344900A9379B /* ToDoItem.swift */,
-				F77F9250271C612400A9379B /* Persistence.swift */,
+				F77F9250271C612400A9379B /* ToDoPersistence.swift */,
 				F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */,
 			);
 			path = Model;
@@ -468,18 +547,25 @@
 				F782BAA027256C7500EF3BA2 /* CameraView.swift in Sources */,
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
+				BF896AE727315F0600115A80 /* PaymentActivity.swift in Sources */,
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
+				BF896AE827315F0600115A80 /* PFPersistence.swift in Sources */,
 				BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */,
 				F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */,
 				F731E166270AAE890090D24C /* SwiftUI_Modal_Alert_Float.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
-				F77F9251271C612400A9379B /* Persistence.swift in Sources */,
+				F77F9251271C612400A9379B /* ToDoPersistence.swift in Sources */,
 				F72B71FF270EF7BE004CA48C /* Card.swift in Sources */,
 				F731E15F2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift in Sources */,
+				BF896AF427315F2A00115A80 /* DashboardView.swift in Sources */,
+				BF896AF027315F2A00115A80 /* PaymentDetailView.swift in Sources */,
+				BF896AFA27315F6800115A80 /* PaymentDetailViewModel.swift in Sources */,
 				F72B724B271C258E004CA48C /* LoanContentView.swift in Sources */,
+				BF896AF527315F2A00115A80 /* KeyboardAdaptive.swift in Sources */,
 				F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */,
 				F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */,
 				F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */,
+				BF896AE327315EE000115A80 /* Date+Ext.swift in Sources */,
 				BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */,
 				F731E172270C5BCF0090D24C /* SwiftUI_signup.swift in Sources */,
 				F72B7208270EF92D004CA48C /* AppleCardView.swift in Sources */,
@@ -492,16 +578,20 @@
 				F77F927627255E3E00A9379B /* CameraContentView.swift in Sources */,
 				F782BAA227256CA600EF3BA2 /* CameraModel.swift in Sources */,
 				F72B7206270EF81E004CA48C /* TransactionHistoryView.swift in Sources */,
+				BF896AD727315E9A00115A80 /* PFinanceStore.xcdatamodeld in Sources */,
 				F77F924B271C344900A9379B /* ToDoItem.swift in Sources */,
 				BF800C6A27292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift in Sources */,
 				F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */,
 				F731E178270DC5600090D24C /* DraggableView.swift in Sources */,
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
+				BF896AE227315EE000115A80 /* NumberFormatter+Ext.swift in Sources */,
 				F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */,
 				F72B7211271301F8004CA48C /* LoanStore.swift in Sources */,
+				BF896AF127315F2A00115A80 /* BottomSheet.swift in Sources */,
 				F72B720F27130139004CA48C /* Loan.swift in Sources */,
 				BFD1B3FB27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift in Sources */,
 				F72B724D271C266B004CA48C /* LoanFilterView.swift in Sources */,
+				BF896AF227315F2A00115A80 /* PaymentFormView.swift in Sources */,
 				F72B720A270EFC3C004CA48C /* SwiftUI_zIndex.swift in Sources */,
 				F731E16A270AE7B80090D24C /* SwiftUI_form.swift in Sources */,
 				F77F92722725588600A9379B /* AutoResize.swift in Sources */,
@@ -517,6 +607,7 @@
 				F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */,
 				F77F925B2724336600A9379B /* FilteredList.swift in Sources */,
 				F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */,
+				BF896AFB27315F6800115A80 /* PaymentFormViewModel.swift in Sources */,
 				F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */,
 				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
 				F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */,
@@ -526,6 +617,7 @@
 				F731E176270DB5190090D24C /* SwiftUI_Gesture.swift in Sources */,
 				F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */,
 				F72B71F7270EDC1F004CA48C /* Trip.swift in Sources */,
+				BF896AF327315F2A00115A80 /* PFBlankView.swift in Sources */,
 				F72B71F9270EDC46004CA48C /* Tinder.swift in Sources */,
 				F731E170270B33BE0090D24C /* SwiftUI_ContextMenu.swift in Sources */,
 			);
@@ -718,6 +810,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		BF896AD527315E9A00115A80 /* PFinanceStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF896AD627315E9A00115A80 /* PFinanceStore.xcdatamodel */,
+			);
+			currentVersion = BF896AD627315E9A00115A80 /* PFinanceStore.xcdatamodel */;
+			path = PFinanceStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		F77F9252271C635E00A9379B /* ToDoList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

@@ -18,8 +18,8 @@
 import Foundation
 import CoreData
 
-struct PersistenceController {
-    static let shared = PersistenceController()
+struct ToDoPersistenceController {
+    static let shared = ToDoPersistenceController()
     
     let container: NSPersistentContainer
     
@@ -36,8 +36,8 @@ struct PersistenceController {
     }
     
     //for preview
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
+    static var preview: ToDoPersistenceController = {
+        let result = ToDoPersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for index in 0..<10 {
             let newItem = ToDoItem(context: viewContext)
