@@ -30,6 +30,8 @@
 		F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070526F9D4A300AC66BC /* SwiftUI_List.swift */; };
 		F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070726F9E29F00AC66BC /* ArticleView.swift */; };
 		F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F706070926F9E34600AC66BC /* SwiftUI_NavigationView.swift */; };
+		F70966C6274A335300878A0D /* ArticleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70966C5274A335300878A0D /* ArticleCardView.swift */; };
+		F70966C8274A38E500878A0D /* AppStoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70966C7274A38E500878A0D /* AppStoreContentView.swift */; };
 		F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */; };
 		F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */; };
 		F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */; };
@@ -89,6 +91,8 @@
 		F77F927627255E3E00A9379B /* CameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F927527255E3E00A9379B /* CameraContentView.swift */; };
 		F782BAA027256C7500EF3BA2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782BA9F27256C7500EF3BA2 /* CameraView.swift */; };
 		F782BAA227256CA600EF3BA2 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782BAA127256CA600EF3BA2 /* CameraModel.swift */; };
+		F7C197D62741183A00C7DF2A /* AppStoreArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C197D52741183A00C7DF2A /* AppStoreArticle.swift */; };
+		F7C197D82741198C00C7DF2A /* ArticleExcerptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C197D72741198C00C7DF2A /* ArticleExcerptView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +119,8 @@
 		F706070526F9D4A300AC66BC /* SwiftUI_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_List.swift; sourceTree = "<group>"; };
 		F706070726F9E29F00AC66BC /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		F706070926F9E34600AC66BC /* SwiftUI_NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NavigationView.swift; sourceTree = "<group>"; };
+		F70966C5274A335300878A0D /* ArticleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCardView.swift; sourceTree = "<group>"; };
+		F70966C7274A38E500878A0D /* AppStoreContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreContentView.swift; sourceTree = "<group>"; };
 		F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_State_Binding.swift; sourceTree = "<group>"; };
 		F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Path_Shape.swift; sourceTree = "<group>"; };
 		F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Animation.swift; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 		F77F927527255E3E00A9379B /* CameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraContentView.swift; sourceTree = "<group>"; };
 		F782BA9F27256C7500EF3BA2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		F782BAA127256CA600EF3BA2 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		F7C197D52741183A00C7DF2A /* AppStoreArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreArticle.swift; sourceTree = "<group>"; };
+		F7C197D72741198C00C7DF2A /* ArticleExcerptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleExcerptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +380,7 @@
 				F77F927427255DE600A9379B /* Camera */,
 				BF896AD4273152D900115A80 /* FinanceApp */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
+				F7C197D3274117BA00C7DF2A /* FakeAPPStore */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
 			);
@@ -471,6 +480,17 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		F7C197D3274117BA00C7DF2A /* FakeAPPStore */ = {
+			isa = PBXGroup;
+			children = (
+				F7C197D52741183A00C7DF2A /* AppStoreArticle.swift */,
+				F70966C7274A38E500878A0D /* AppStoreContentView.swift */,
+				F7C197D72741198C00C7DF2A /* ArticleExcerptView.swift */,
+				F70966C5274A335300878A0D /* ArticleCardView.swift */,
+			);
+			path = FakeAPPStore;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -548,6 +568,7 @@
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
 				BF896AE727315F0600115A80 /* PaymentActivity.swift in Sources */,
+				F70966C6274A335300878A0D /* ArticleCardView.swift in Sources */,
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
 				BF896AE827315F0600115A80 /* PFPersistence.swift in Sources */,
 				BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */,
@@ -555,6 +576,7 @@
 				F731E166270AAE890090D24C /* SwiftUI_Modal_Alert_Float.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
 				F77F9251271C612400A9379B /* ToDoPersistence.swift in Sources */,
+				F7C197D82741198C00C7DF2A /* ArticleExcerptView.swift in Sources */,
 				F72B71FF270EF7BE004CA48C /* Card.swift in Sources */,
 				F731E15F2709BAFD0090D24C /* SwiftUI_NavigationView_article.swift in Sources */,
 				BF896AF427315F2A00115A80 /* DashboardView.swift in Sources */,
@@ -562,6 +584,7 @@
 				BF896AFA27315F6800115A80 /* PaymentDetailViewModel.swift in Sources */,
 				F72B724B271C258E004CA48C /* LoanContentView.swift in Sources */,
 				BF896AF527315F2A00115A80 /* KeyboardAdaptive.swift in Sources */,
+				F7C197D62741183A00C7DF2A /* AppStoreArticle.swift in Sources */,
 				F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */,
 				F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */,
 				F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */,
@@ -581,6 +604,7 @@
 				BF896AD727315E9A00115A80 /* PFinanceStore.xcdatamodeld in Sources */,
 				F77F924B271C344900A9379B /* ToDoItem.swift in Sources */,
 				BF800C6A27292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift in Sources */,
+				F70966C8274A38E500878A0D /* AppStoreContentView.swift in Sources */,
 				F706070A26F9E34600AC66BC /* SwiftUI_NavigationView.swift in Sources */,
 				F731E178270DC5600090D24C /* DraggableView.swift in Sources */,
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
