@@ -10,7 +10,7 @@ import SwiftUI
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        print("first call method, for 3rd sdk use")
+//        print("first call method, for 3rd sdk use")
         return true
     }
 }
@@ -33,18 +33,22 @@ struct SwiftUI_ViewsApp: App {
             //ToDoContentView().environment(\.managedObjectContext, todoPersistenseController.container.viewContext)
             
 //            DashboardView().environment(\.managedObjectContext, pfPersistenseController.container.viewContext)
-            ImageCarouselContentView()
+            ExpandableListContentView()
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {
             case .active:
-                print("App is active")
+//                print("App is active")
+                break
             case .inactive:
-                print("App is inactive")
+//                print("App is inactive")
+                break
             case .background:
-                print("App is in background")
+//                print("App is in background")
+                break
             @unknown default:
-                print("Oh - interesting: I received an unexpected new value.")
+//                print("Oh - interesting: I received an unexpected new value.")
+                break
             }
         }
     }

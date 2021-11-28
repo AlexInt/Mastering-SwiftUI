@@ -36,6 +36,8 @@
 		F70966CE274A432700878A0D /* ICTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70966CD274A432700878A0D /* ICTrip.swift */; };
 		F70966D0274A439F00878A0D /* ICTripCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70966CF274A439F00878A0D /* ICTripCardView.swift */; };
 		F70966D2274A4C4900878A0D /* ICTripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70966D1274A4C4900878A0D /* ICTripDetailView.swift */; };
+		F70966D52753712B00878A0D /* ExpandableListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70966D42753712B00878A0D /* ExpandableListContentView.swift */; };
+		F70966D72753718F00878A0D /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70966D62753718F00878A0D /* MenuItem.swift */; };
 		F7287E8726F23D17000C2DD2 /* SwiftUI_State_Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */; };
 		F7287E8926F75717000C2DD2 /* SwiftUI_Path_Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */; };
 		F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */; };
@@ -129,6 +131,8 @@
 		F70966CD274A432700878A0D /* ICTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTrip.swift; sourceTree = "<group>"; };
 		F70966CF274A439F00878A0D /* ICTripCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTripCardView.swift; sourceTree = "<group>"; };
 		F70966D1274A4C4900878A0D /* ICTripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICTripDetailView.swift; sourceTree = "<group>"; };
+		F70966D42753712B00878A0D /* ExpandableListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListContentView.swift; sourceTree = "<group>"; };
+		F70966D62753718F00878A0D /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		F7287E8626F23D17000C2DD2 /* SwiftUI_State_Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_State_Binding.swift; sourceTree = "<group>"; };
 		F7287E8826F75717000C2DD2 /* SwiftUI_Path_Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Path_Shape.swift; sourceTree = "<group>"; };
 		F7287E8A26F83F84000C2DD2 /* SwiftUI_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Animation.swift; sourceTree = "<group>"; };
@@ -268,6 +272,15 @@
 			path = ImageCarousel;
 			sourceTree = "<group>";
 		};
+		F70966D32753711800878A0D /* ExpandableList */ = {
+			isa = PBXGroup;
+			children = (
+				F70966D42753712B00878A0D /* ExpandableListContentView.swift */,
+				F70966D62753718F00878A0D /* MenuItem.swift */,
+			);
+			path = ExpandableList;
+			sourceTree = "<group>";
+		};
 		F72B71F5270EAA21004CA48C /* Tinder-like */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +414,7 @@
 				F7C197D3274117BA00C7DF2A /* FakeAPPStore */,
 				F70966CA274A427A00878A0D /* ImageCarousel */,
 				F77D020926EDAA62008234ED /* Assets.xcassets */,
+				F70966D32753711800878A0D /* ExpandableList */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
 			);
@@ -605,6 +619,7 @@
 				F72B724B271C258E004CA48C /* LoanContentView.swift in Sources */,
 				BF896AF527315F2A00115A80 /* KeyboardAdaptive.swift in Sources */,
 				F7C197D62741183A00C7DF2A /* AppStoreArticle.swift in Sources */,
+				F70966D72753718F00878A0D /* MenuItem.swift in Sources */,
 				F70966D0274A439F00878A0D /* ICTripCardView.swift in Sources */,
 				F70966D2274A4C4900878A0D /* ICTripDetailView.swift in Sources */,
 				F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */,
@@ -660,6 +675,7 @@
 				F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */,
 				F72B7201270EF7E5004CA48C /* CardTransaction.swift in Sources */,
 				F731E16E270AF59F0090D24C /* SettingStore.swift in Sources */,
+				F70966D52753712B00878A0D /* ExpandableListContentView.swift in Sources */,
 				F731E181270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift in Sources */,
 				F731E176270DB5190090D24C /* SwiftUI_Gesture.swift in Sources */,
 				F77D021526EDAAA3008234ED /* SwiftUI_Text.swift in Sources */,
