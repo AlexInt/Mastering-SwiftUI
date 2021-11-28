@@ -10,10 +10,13 @@ import SwiftUI
  the space between rows is controlled by the spacing parameter of LazyVGrid
  */
 struct LazyGridContentView: View {
+    //1. First,you need to prepare the raw data for presenting in the grid.
     private var symbols = ["keyboard", "hifispeaker.fill", "printer.fill", "tv.fill", "desktopcomputer", "headphones", "tv.music.note", "mic", "plus.bubble", "video"]
     
     private var colors: [Color] = [.yellow, .purple, .green]
 
+    //2. Create an array of GridItem that describes how the grid looks like.
+    
     //The spacing between grid items is controlled by the instances of GridItem initialized in gridItemLayout
 //    private var gridItemLayout = [GridItem(.flexible(), spacing: 10),
 //                                  GridItem(.flexible(), spacing: 20),
@@ -30,6 +33,7 @@ struct LazyGridContentView: View {
                                   GridItem(.adaptive(minimum: 50))]
     
     var body: some View {
+        //3. Next, you can layout the grid by using LazyVGrid and ScrollView
 //        ScrollView {
 //            //the space between rows is controlled by the spacing parameter of LazyVGrid
 //            LazyVGrid(columns: gridItemLayout, spacing: 20) {
@@ -43,6 +47,7 @@ struct LazyGridContentView: View {
 //            }
 //        }
         
+        //Alternatively, if you want to build a horizontal grid
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: gridItemLayout, spacing: 20) {
                 ForEach((0...9999), id:\.self) {

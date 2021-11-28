@@ -33,7 +33,7 @@ struct SwiftUI_ViewsApp: App {
             //ToDoContentView().environment(\.managedObjectContext, todoPersistenseController.container.viewContext)
             
 //            DashboardView().environment(\.managedObjectContext, pfPersistenseController.container.viewContext)
-            MultiGridView()
+            ProgressRingContent()
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {

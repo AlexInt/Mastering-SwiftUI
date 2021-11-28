@@ -88,6 +88,9 @@
 		F77F516F275389BC00186811 /* CoffePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F516E275389BC00186811 /* CoffePhoto.swift */; };
 		F77F5171275389EC00186811 /* CoffePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F5170275389EC00186811 /* CoffePhotosView.swift */; };
 		F77F517327538D6D00186811 /* MultiGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517227538D6D00186811 /* MultiGridView.swift */; };
+		F77F51772753948600186811 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F51762753948500186811 /* ProgressRingView.swift */; };
+		F77F51792753958F00186811 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F51782753958F00186811 /* Color+Ext.swift */; };
+		F77F517B275399EC00186811 /* ProgressRingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517A275399EC00186811 /* ProgressRingContent.swift */; };
 		F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9242271C33DE00A9379B /* ToDoContentView.swift */; };
 		F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9245271C341F00A9379B /* CheckboxStyle.swift */; };
 		F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9247271C342A00A9379B /* NewToDoView.swift */; };
@@ -189,6 +192,9 @@
 		F77F516E275389BC00186811 /* CoffePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffePhoto.swift; sourceTree = "<group>"; };
 		F77F5170275389EC00186811 /* CoffePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffePhotosView.swift; sourceTree = "<group>"; };
 		F77F517227538D6D00186811 /* MultiGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGridView.swift; sourceTree = "<group>"; };
+		F77F51762753948500186811 /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		F77F51782753958F00186811 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		F77F517A275399EC00186811 /* ProgressRingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingContent.swift; sourceTree = "<group>"; };
 		F77F9242271C33DE00A9379B /* ToDoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoContentView.swift; sourceTree = "<group>"; };
 		F77F9245271C341F00A9379B /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 		F77F9247271C342A00A9379B /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
@@ -394,6 +400,59 @@
 			children = (
 				F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */,
 				F77D020726EDAA60008234ED /* ContentView.swift */,
+				F77F51752753946500186811 /* BasicView */,
+				F77F927327255DBF00A9379B /* handleKeyboard */,
+				F731E179270DC8A20090D24C /* Gesture */,
+				F731E1602709BB710090D24C /* Article */,
+				F72B71F5270EAA21004CA48C /* Tinder-like */,
+				F72B71FC270EF789004CA48C /* Apple-Wallet */,
+				F72B720D27130128004CA48C /* KivaLoan */,
+				F77F9241271C33C500A9379B /* ToDoApp */,
+				F77F927427255DE600A9379B /* Camera */,
+				BF896AD4273152D900115A80 /* FinanceApp */,
+				F7C197D3274117BA00C7DF2A /* FakeAPPStore */,
+				F70966CA274A427A00878A0D /* ImageCarousel */,
+				F77D020926EDAA62008234ED /* Assets.xcassets */,
+				F70966D32753711800878A0D /* ExpandableList */,
+				F70966D82753833300878A0D /* LazyGrid */,
+				F77F51742753944E00186811 /* ProgressRing */,
+				F77D020E26EDAA62008234ED /* Info.plist */,
+				F77D020B26EDAA62008234ED /* Preview Content */,
+			);
+			path = "SwiftUI-Views";
+			sourceTree = "<group>";
+		};
+		F77D020B26EDAA62008234ED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F77D020C26EDAA62008234ED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F77F516D275389A000186811 /* CoffeeShop */ = {
+			isa = PBXGroup;
+			children = (
+				F77F516E275389BC00186811 /* CoffePhoto.swift */,
+				F77F5170275389EC00186811 /* CoffePhotosView.swift */,
+				F77F517227538D6D00186811 /* MultiGridView.swift */,
+			);
+			path = CoffeeShop;
+			sourceTree = "<group>";
+		};
+		F77F51742753944E00186811 /* ProgressRing */ = {
+			isa = PBXGroup;
+			children = (
+				F77F51762753948500186811 /* ProgressRingView.swift */,
+				F77F517A275399EC00186811 /* ProgressRingContent.swift */,
+				F77F51782753958F00186811 /* Color+Ext.swift */,
+			);
+			path = ProgressRing;
+			sourceTree = "<group>";
+		};
+		F77F51752753946500186811 /* BasicView */ = {
+			isa = PBXGroup;
+			children = (
 				F77D021426EDAAA3008234ED /* SwiftUI_Text.swift */,
 				F77D021626EDB74D008234ED /* SwiftUI_Images_Labels.swift */,
 				F77D021826EE0FA1008234ED /* SwiftUI_stacks.swift */,
@@ -419,42 +478,8 @@
 				BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */,
 				BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */,
 				BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */,
-				F77F927327255DBF00A9379B /* handleKeyboard */,
-				F731E179270DC8A20090D24C /* Gesture */,
-				F731E1602709BB710090D24C /* Article */,
-				F72B71F5270EAA21004CA48C /* Tinder-like */,
-				F72B71FC270EF789004CA48C /* Apple-Wallet */,
-				F72B720D27130128004CA48C /* KivaLoan */,
-				F77F9241271C33C500A9379B /* ToDoApp */,
-				F77F927427255DE600A9379B /* Camera */,
-				BF896AD4273152D900115A80 /* FinanceApp */,
-				F7C197D3274117BA00C7DF2A /* FakeAPPStore */,
-				F70966CA274A427A00878A0D /* ImageCarousel */,
-				F77D020926EDAA62008234ED /* Assets.xcassets */,
-				F70966D32753711800878A0D /* ExpandableList */,
-				F70966D82753833300878A0D /* LazyGrid */,
-				F77D020E26EDAA62008234ED /* Info.plist */,
-				F77D020B26EDAA62008234ED /* Preview Content */,
 			);
-			path = "SwiftUI-Views";
-			sourceTree = "<group>";
-		};
-		F77D020B26EDAA62008234ED /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F77D020C26EDAA62008234ED /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F77F516D275389A000186811 /* CoffeeShop */ = {
-			isa = PBXGroup;
-			children = (
-				F77F516E275389BC00186811 /* CoffePhoto.swift */,
-				F77F5170275389EC00186811 /* CoffePhotosView.swift */,
-				F77F517227538D6D00186811 /* MultiGridView.swift */,
-			);
-			path = CoffeeShop;
+			path = BasicView;
 			sourceTree = "<group>";
 		};
 		F77F921F271C2EAA00A9379B /* model */ = {
@@ -627,6 +652,7 @@
 				F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */,
 				F72B71FB270EDCF8004CA48C /* TinderCardView.swift in Sources */,
 				F782BAA027256C7500EF3BA2 /* CameraView.swift in Sources */,
+				F77F51792753958F00186811 /* Color+Ext.swift in Sources */,
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
 				BF896AE727315F0600115A80 /* PaymentActivity.swift in Sources */,
@@ -697,6 +723,7 @@
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
 				F731E1622709BB890090D24C /* Article.swift in Sources */,
 				F72B7249271C242D004CA48C /* LoanCellView.swift in Sources */,
+				F77F51772753948600186811 /* ProgressRingView.swift in Sources */,
 				F706070426F9957D00AC66BC /* SwiftUI_Transition.swift in Sources */,
 				F77F517327538D6D00186811 /* MultiGridView.swift in Sources */,
 				F77F925B2724336600A9379B /* FilteredList.swift in Sources */,
@@ -716,6 +743,7 @@
 				F72B71F9270EDC46004CA48C /* Tinder.swift in Sources */,
 				F70966CE274A432700878A0D /* ICTrip.swift in Sources */,
 				F731E170270B33BE0090D24C /* SwiftUI_ContextMenu.swift in Sources */,
+				F77F517B275399EC00186811 /* ProgressRingContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
