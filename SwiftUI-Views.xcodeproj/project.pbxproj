@@ -93,6 +93,7 @@
 		F77F517B275399EC00186811 /* ProgressRingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517A275399EC00186811 /* ProgressRingContent.swift */; };
 		F77F517D2753C44B00186811 /* SwiftUI_TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517C2753C44B00186811 /* SwiftUI_TextEditor.swift */; };
 		F77F517F2753C6ED00186811 /* SwiftUI_GeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517E2753C6ED00186811 /* SwiftUI_GeometryEffect.swift */; };
+		F77F51812753D3F300186811 /* PhotoLibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F51802753D3F300186811 /* PhotoLibView.swift */; };
 		F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9242271C33DE00A9379B /* ToDoContentView.swift */; };
 		F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9245271C341F00A9379B /* CheckboxStyle.swift */; };
 		F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9247271C342A00A9379B /* NewToDoView.swift */; };
@@ -199,6 +200,7 @@
 		F77F517A275399EC00186811 /* ProgressRingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingContent.swift; sourceTree = "<group>"; };
 		F77F517C2753C44B00186811 /* SwiftUI_TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TextEditor.swift; sourceTree = "<group>"; };
 		F77F517E2753C6ED00186811 /* SwiftUI_GeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GeometryEffect.swift; sourceTree = "<group>"; };
+		F77F51802753D3F300186811 /* PhotoLibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibView.swift; sourceTree = "<group>"; };
 		F77F9242271C33DE00A9379B /* ToDoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoContentView.swift; sourceTree = "<group>"; };
 		F77F9245271C341F00A9379B /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 		F77F9247271C342A00A9379B /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 				F77F516E275389BC00186811 /* CoffePhoto.swift */,
 				F77F5170275389EC00186811 /* CoffePhotosView.swift */,
 				F77F517227538D6D00186811 /* MultiGridView.swift */,
+				F77F51802753D3F300186811 /* PhotoLibView.swift */,
 			);
 			path = CoffeeShop;
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 				F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */,
 				F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */,
 				BF896AE327315EE000115A80 /* Date+Ext.swift in Sources */,
+				F77F51812753D3F300186811 /* PhotoLibView.swift in Sources */,
 				BFA5FC7627281B49004C139A /* SwiftUI_Webview.swift in Sources */,
 				F731E172270C5BCF0090D24C /* SwiftUI_signup.swift in Sources */,
 				F72B7208270EF92D004CA48C /* AppleCardView.swift in Sources */,
