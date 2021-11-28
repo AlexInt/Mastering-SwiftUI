@@ -91,6 +91,8 @@
 		F77F51772753948600186811 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F51762753948500186811 /* ProgressRingView.swift */; };
 		F77F51792753958F00186811 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F51782753958F00186811 /* Color+Ext.swift */; };
 		F77F517B275399EC00186811 /* ProgressRingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517A275399EC00186811 /* ProgressRingContent.swift */; };
+		F77F517D2753C44B00186811 /* SwiftUI_TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517C2753C44B00186811 /* SwiftUI_TextEditor.swift */; };
+		F77F517F2753C6ED00186811 /* SwiftUI_GeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F517E2753C6ED00186811 /* SwiftUI_GeometryEffect.swift */; };
 		F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9242271C33DE00A9379B /* ToDoContentView.swift */; };
 		F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9245271C341F00A9379B /* CheckboxStyle.swift */; };
 		F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F9247271C342A00A9379B /* NewToDoView.swift */; };
@@ -195,6 +197,8 @@
 		F77F51762753948500186811 /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
 		F77F51782753958F00186811 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		F77F517A275399EC00186811 /* ProgressRingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingContent.swift; sourceTree = "<group>"; };
+		F77F517C2753C44B00186811 /* SwiftUI_TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TextEditor.swift; sourceTree = "<group>"; };
+		F77F517E2753C6ED00186811 /* SwiftUI_GeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GeometryEffect.swift; sourceTree = "<group>"; };
 		F77F9242271C33DE00A9379B /* ToDoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoContentView.swift; sourceTree = "<group>"; };
 		F77F9245271C341F00A9379B /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 		F77F9247271C342A00A9379B /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
@@ -478,6 +482,8 @@
 				BFD1B3FA27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift */,
 				BF800C6927292C3000E13BB1 /* SwiftUI_AnimatedNaviMenu.swift */,
 				BF800C6B272933DB00E13BB1 /* SwiftUI_AsyncImage.swift */,
+				F77F517C2753C44B00186811 /* SwiftUI_TextEditor.swift */,
+				F77F517E2753C6ED00186811 /* SwiftUI_GeometryEffect.swift */,
 			);
 			path = BasicView;
 			sourceTree = "<group>";
@@ -650,6 +656,7 @@
 				BF800C6C272933DB00E13BB1 /* SwiftUI_AsyncImage.swift in Sources */,
 				F77D021D26EE24D3008234ED /* SwiftUI_Buttons_Labels_Gradient.swift in Sources */,
 				F7287E8B26F83F84000C2DD2 /* SwiftUI_Animation.swift in Sources */,
+				F77F517D2753C44B00186811 /* SwiftUI_TextEditor.swift in Sources */,
 				F72B71FB270EDCF8004CA48C /* TinderCardView.swift in Sources */,
 				F782BAA027256C7500EF3BA2 /* CameraView.swift in Sources */,
 				F77F51792753958F00186811 /* Color+Ext.swift in Sources */,
@@ -729,6 +736,7 @@
 				F77F925B2724336600A9379B /* FilteredList.swift in Sources */,
 				F77F9246271C341F00A9379B /* CheckboxStyle.swift in Sources */,
 				BF896AFB27315F6800115A80 /* PaymentFormViewModel.swift in Sources */,
+				F77F517F2753C6ED00186811 /* SwiftUI_GeometryEffect.swift in Sources */,
 				F731E174270C67250090D24C /* UserRegistrationViewModel.swift in Sources */,
 				F706070826F9E29F00AC66BC /* ArticleView.swift in Sources */,
 				F77F9243271C33DE00A9379B /* ToDoContentView.swift in Sources */,
