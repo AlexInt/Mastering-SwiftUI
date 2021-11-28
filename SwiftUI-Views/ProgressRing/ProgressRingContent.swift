@@ -12,13 +12,13 @@ struct ProgressRingContent: View {
     var body: some View {
         VStack {
             ZStack {
-                ProgressRingView(progress: $progress, width: 320)
+                //                ProgressRingView(progress: $progress, width: 380)
                 
-                ProgressRingView(progress: $progress, width: 250, gradient: Gradient(colors: [.lightPurple]))
+                ProgressRingView(progress: $progress, width: 320, gradient: Gradient(colors: [.lightPurple]))
                 
-                ProgressRingView(progress: $progress,width: 180, gradient: Gradient(colors: [.lightOrange]))
+                ProgressRingView(progress: $progress,width: 250, gradient: Gradient(colors: [.lightOrange]))
                 
-                ProgressRingView(progress: $progress,width: 110, gradient: Gradient(colors: [.lightGreen]))
+                ProgressRingView(progress: $progress,width: 180, gradient: Gradient(colors: [.lightGreen]))
             }
             HStack {
                 Group {
@@ -64,3 +64,38 @@ struct ProgressRingContent_Previews: PreviewProvider {
         ProgressRingContent()
     }
 }
+
+/*
+ The new version of Xcode 12 now makes it possible to add your custom views the library by using a new protocol called LibraryContentProvider .
+ 
+ The way to add a view to the View library is very simple. You create a struct that conforms to LibraryContentProvider and override the views property to return an array of custom views.
+ 
+ you can't add the documentation to your custom control.
+ */
+struct ProgressBar_Library: LibraryContentProvider {
+    @LibraryContentBuilder var views: [LibraryItem] {
+        [LibraryItem(ProgressRingView(progress: .constant(1.0),
+                                     thickness: 12.0,
+                                     width: 130.0,
+                                     gradient: Gradient(colors: [.darkYellow, .lightYellow])),
+                    title: "Progress Ring",
+                    category: .control),
+         LibraryItem(ProgressRingView(progress: .constant(1.0),
+                                      thickness: 30.0,
+                                      width: 250.0,
+                                      gradient: Gradient(colors: [.darkPurple, .lightYellow])),
+                     title: "Progress Ring - bigger",
+                     category: .control)
+        ]
+    }
+}
+
+struct ProgressBarText_Library: LibraryContentProvider {
+    @LibraryContentBuilder
+    func modifiers(base: Circle) -> [LibraryItem] {
+        LibraryItem(base.animatableProgressText(progress: 1.0),
+                    title: "Progress Indicator",
+                    category: .control)
+    }
+}
+

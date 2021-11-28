@@ -40,7 +40,7 @@ struct ProgressRingView: View {
                                       center: .center,
                                       startAngle: .degrees(startAngle),
                                       endAngle: .degrees(360 * progress + startAngle)))
-            
+                .animatableProgressText(progress: progress)
             RingTip(progress: progress,
                     startAngle: startAngle,
                     ringRadius: radius)
@@ -139,5 +139,40 @@ struct RingTip: Shape {
         path.addRoundedRect(in: frame, cornerSize: frame.size)
         
         return path
+    }
+}
+
+struct ProgressTextModifier: AnimatableModifier {
+    var progress: Double = 0.0
+    var textColor: Color = .primary
+    
+    private var progressText: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .percent
+        formatter.percentSymbol = "%"
+        return formatter.string(from: NSNumber(value: progress)) ?? ""
+    }
+    
+    var animatableData: Double {
+        get { progress }
+        set { progress = newValue }
+    }
+    
+    func body(content: Content) -> some View {
+        content
+            .overlay(
+                Text(progressText)
+                    .font(.system(.largeTitle, design: .rounded))
+                    .fontWeight(.bold)
+                    .foregroundColor(textColor)
+                    .animation(nil)
+            )
+    }
+}
+
+extension View {
+    func animatableProgressText(progress: Double,
+                                textColor: Color = Color.primary) -> some View {
+        self.modifier(ProgressTextModifier(progress: progress, textColor: textColor))
     }
 }
