@@ -107,6 +107,8 @@
 		F77F927627255E3E00A9379B /* CameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F927527255E3E00A9379B /* CameraContentView.swift */; };
 		F782BAA027256C7500EF3BA2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782BA9F27256C7500EF3BA2 /* CameraView.swift */; };
 		F782BAA227256CA600EF3BA2 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782BAA127256CA600EF3BA2 /* CameraModel.swift */; };
+		F7ABB92E27D5AC1100A28EC1 /* AppleClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABB92D27D5AC1100A28EC1 /* AppleClockView.swift */; };
+		F7ABB93027D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABB92F27D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift */; };
 		F7C197D62741183A00C7DF2A /* AppStoreArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C197D52741183A00C7DF2A /* AppStoreArticle.swift */; };
 		F7C197D82741198C00C7DF2A /* ArticleExcerptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C197D72741198C00C7DF2A /* ArticleExcerptView.swift */; };
 /* End PBXBuildFile section */
@@ -214,6 +216,8 @@
 		F77F927527255E3E00A9379B /* CameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraContentView.swift; sourceTree = "<group>"; };
 		F782BA9F27256C7500EF3BA2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		F782BAA127256CA600EF3BA2 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		F7ABB92D27D5AC1100A28EC1 /* AppleClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleClockView.swift; sourceTree = "<group>"; };
+		F7ABB92F27D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNowPlayingView.swift; sourceTree = "<group>"; };
 		F7C197D52741183A00C7DF2A /* AppStoreArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreArticle.swift; sourceTree = "<group>"; };
 		F7C197D72741198C00C7DF2A /* ArticleExcerptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleExcerptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -409,6 +413,7 @@
 				F77F51752753946500186811 /* BasicView */,
 				F77F927327255DBF00A9379B /* handleKeyboard */,
 				F731E179270DC8A20090D24C /* Gesture */,
+				F7ABB92C27D5ABB300A28EC1 /* AppleClockView */,
 				F731E1602709BB710090D24C /* Article */,
 				F72B71F5270EAA21004CA48C /* Tinder-like */,
 				F72B71FC270EF789004CA48C /* Apple-Wallet */,
@@ -576,6 +581,15 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		F7ABB92C27D5ABB300A28EC1 /* AppleClockView */ = {
+			isa = PBXGroup;
+			children = (
+				F7ABB92D27D5AC1100A28EC1 /* AppleClockView.swift */,
+				F7ABB92F27D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift */,
+			);
+			path = AppleClockView;
+			sourceTree = "<group>";
+		};
 		F7C197D3274117BA00C7DF2A /* FakeAPPStore */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,12 +698,14 @@
 				F77F5171275389EC00186811 /* CoffePhotosView.swift in Sources */,
 				BF896AFA27315F6800115A80 /* PaymentDetailViewModel.swift in Sources */,
 				F72B724B271C258E004CA48C /* LoanContentView.swift in Sources */,
+				F7ABB92E27D5AC1100A28EC1 /* AppleClockView.swift in Sources */,
 				BF896AF527315F2A00115A80 /* KeyboardAdaptive.swift in Sources */,
 				F7C197D62741183A00C7DF2A /* AppStoreArticle.swift in Sources */,
 				F70966D72753718F00878A0D /* MenuItem.swift in Sources */,
 				F70966D0274A439F00878A0D /* ICTripCardView.swift in Sources */,
 				F70966D2274A4C4900878A0D /* ICTripDetailView.swift in Sources */,
 				F72B71F4270EA53D004CA48C /* BottomSheetView.swift in Sources */,
+				F7ABB93027D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift in Sources */,
 				F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */,
 				F72B71F2270DDCBD004CA48C /* DragState.swift in Sources */,
 				BF896AE327315EE000115A80 /* Date+Ext.swift in Sources */,
@@ -885,7 +901,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Views/Preview Content\"";
-				DEVELOPMENT_TEAM = C4N9FHZHPR;
+				DEVELOPMENT_TEAM = X2CUKWK56W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Views/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -907,7 +923,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Views/Preview Content\"";
-				DEVELOPMENT_TEAM = C4N9FHZHPR;
+				DEVELOPMENT_TEAM = X2CUKWK56W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Views/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

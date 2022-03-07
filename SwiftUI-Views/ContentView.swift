@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Form {
+            Section(header: Text("Spotify now playing")) {
+                HStack {
+                    Spacer()
+                    SpotifyNowPlayingView()
+                        .frame(width: 40, height: 50, alignment: .center)
+                    Spacer()
+                }
+            }
+            
+            Section(header: Text("Apple clock")) {
+                HStack {
+                    Spacer()
+                    AppleClockView()
+                        .frame(width: 250, height: 250, alignment: .center)
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
