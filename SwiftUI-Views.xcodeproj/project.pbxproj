@@ -76,6 +76,9 @@
 		F731E17D270DCAB20090D24C /* SwiftUI_BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E17C270DCAB20090D24C /* SwiftUI_BottomSheet.swift */; };
 		F731E17F270DCB400090D24C /* RestaurantInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E17E270DCB400090D24C /* RestaurantInfoRow.swift */; };
 		F731E181270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731E180270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift */; };
+		F74A450D27E3152900657E9A /* NeumorphismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A450C27E3152900657E9A /* NeumorphismView.swift */; };
+		F74A450F27E3154900657E9A /* NeumorphismLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A450E27E3154900657E9A /* NeumorphismLight.swift */; };
+		F74A451127E3155200657E9A /* NeumorphismDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A451027E3155200657E9A /* NeumorphismDark.swift */; };
 		F7522F0527DCA11A00358D54 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7522F0427DCA11A00358D54 /* LoginPage.swift */; };
 		F7522F0727DCA14900358D54 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7522F0627DCA14900358D54 /* LoginView.swift */; };
 		F7522F0927DCA15F00358D54 /* SignUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7522F0827DCA15F00358D54 /* SignUPView.swift */; };
@@ -186,6 +189,9 @@
 		F731E17C270DCAB20090D24C /* SwiftUI_BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BottomSheet.swift; sourceTree = "<group>"; };
 		F731E17E270DCB400090D24C /* RestaurantInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoRow.swift; sourceTree = "<group>"; };
 		F731E180270DCBFC0090D24C /* RestaurantInfoDetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoDetailPageView.swift; sourceTree = "<group>"; };
+		F74A450C27E3152900657E9A /* NeumorphismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismView.swift; sourceTree = "<group>"; };
+		F74A450E27E3154900657E9A /* NeumorphismLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismLight.swift; sourceTree = "<group>"; };
+		F74A451027E3155200657E9A /* NeumorphismDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismDark.swift; sourceTree = "<group>"; };
 		F7522F0427DCA11A00358D54 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		F7522F0627DCA14900358D54 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F7522F0827DCA15F00358D54 /* SignUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPView.swift; sourceTree = "<group>"; };
@@ -395,6 +401,16 @@
 			path = Gesture;
 			sourceTree = "<group>";
 		};
+		F74A450B27E3150C00657E9A /* Neumorphism */ = {
+			isa = PBXGroup;
+			children = (
+				F74A450C27E3152900657E9A /* NeumorphismView.swift */,
+				F74A450E27E3154900657E9A /* NeumorphismLight.swift */,
+				F74A451027E3155200657E9A /* NeumorphismDark.swift */,
+			);
+			path = Neumorphism;
+			sourceTree = "<group>";
+		};
 		F7522F0327DCA10700358D54 /* LoginPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +442,7 @@
 			children = (
 				F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */,
 				F77D020726EDAA60008234ED /* ContentView.swift */,
+				F74A450B27E3150C00657E9A /* Neumorphism */,
 				F7522F0327DCA10700358D54 /* LoginPage */,
 				F77F51752753946500186811 /* BasicView */,
 				F77F927327255DBF00A9379B /* handleKeyboard */,
@@ -697,6 +714,7 @@
 				F77D021726EDB74D008234ED /* SwiftUI_Images_Labels.swift in Sources */,
 				F731E16C270AEACA0090D24C /* SettingView.swift in Sources */,
 				BF896AE727315F0600115A80 /* PaymentActivity.swift in Sources */,
+				F74A450D27E3152900657E9A /* NeumorphismView.swift in Sources */,
 				F70966C6274A335300878A0D /* ArticleCardView.swift in Sources */,
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
 				BF896AE827315F0600115A80 /* PFPersistence.swift in Sources */,
@@ -751,6 +769,7 @@
 				F77D021926EE0FA1008234ED /* SwiftUI_stacks.swift in Sources */,
 				BF896AE227315EE000115A80 /* NumberFormatter+Ext.swift in Sources */,
 				F7522F0727DCA14900358D54 /* LoginView.swift in Sources */,
+				F74A451127E3155200657E9A /* NeumorphismDark.swift in Sources */,
 				F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */,
 				F72B7211271301F8004CA48C /* LoanStore.swift in Sources */,
 				BF896AF127315F2A00115A80 /* BottomSheet.swift in Sources */,
@@ -765,6 +784,7 @@
 				F72B720C270F08C3004CA48C /* CardDragState.swift in Sources */,
 				F731E1642709BBCF0090D24C /* ArticleDetailView.swift in Sources */,
 				F731E17F270DCB400090D24C /* RestaurantInfoRow.swift in Sources */,
+				F74A450F27E3154900657E9A /* NeumorphismLight.swift in Sources */,
 				F77D021B26EE1ACD008234ED /* SwiftUI_ScrollView.swift in Sources */,
 				F77F9254271C635E00A9379B /* ToDoList.xcdatamodeld in Sources */,
 				F77D020626EDAA60008234ED /* SwiftUI_ViewsApp.swift in Sources */,
