@@ -34,7 +34,7 @@ struct SwiftUI_ViewsApp: App {
             
 //            DashboardView().environment(\.managedObjectContext, pfPersistenseController.container.viewContext)
 //            PhotoLibView()
-            NeumorphismView()
+            StickyHeaderContentView()
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {

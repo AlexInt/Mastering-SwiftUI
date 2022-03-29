@@ -79,6 +79,8 @@
 		F74A450D27E3152900657E9A /* NeumorphismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A450C27E3152900657E9A /* NeumorphismView.swift */; };
 		F74A450F27E3154900657E9A /* NeumorphismLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A450E27E3154900657E9A /* NeumorphismLight.swift */; };
 		F74A451127E3155200657E9A /* NeumorphismDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A451027E3155200657E9A /* NeumorphismDark.swift */; };
+		F74A451527E31ED700657E9A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74A451427E31ED700657E9A /* Colors.xcassets */; };
+		F751C9AE27F305D8000C89A1 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F751C9AD27F305D8000C89A1 /* FoodViewModel.swift */; };
 		F7522F0527DCA11A00358D54 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7522F0427DCA11A00358D54 /* LoginPage.swift */; };
 		F7522F0727DCA14900358D54 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7522F0627DCA14900358D54 /* LoginView.swift */; };
 		F7522F0927DCA15F00358D54 /* SignUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7522F0827DCA15F00358D54 /* SignUPView.swift */; };
@@ -115,6 +117,11 @@
 		F782BAA227256CA600EF3BA2 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782BAA127256CA600EF3BA2 /* CameraModel.swift */; };
 		F7ABB92E27D5AC1100A28EC1 /* AppleClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABB92D27D5AC1100A28EC1 /* AppleClockView.swift */; };
 		F7ABB93027D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABB92F27D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift */; };
+		F7BAC37527F28969000AAA8E /* StickyHeaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC37427F28969000AAA8E /* StickyHeaderContentView.swift */; };
+		F7BAC37727F289E6000AAA8E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC37627F289E6000AAA8E /* Food.swift */; };
+		F7BAC37927F28DA7000AAA8E /* FoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC37827F28DA7000AAA8E /* FoodCardView.swift */; };
+		F7BAC37B27F28F08000AAA8E /* FoodHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC37A27F28F08000AAA8E /* FoodHeaderView.swift */; };
+		F7BAC37D27F2A5B2000AAA8E /* FoodTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC37C27F2A5B1000AAA8E /* FoodTab.swift */; };
 		F7C197D62741183A00C7DF2A /* AppStoreArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C197D52741183A00C7DF2A /* AppStoreArticle.swift */; };
 		F7C197D82741198C00C7DF2A /* ArticleExcerptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C197D72741198C00C7DF2A /* ArticleExcerptView.swift */; };
 /* End PBXBuildFile section */
@@ -192,6 +199,8 @@
 		F74A450C27E3152900657E9A /* NeumorphismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismView.swift; sourceTree = "<group>"; };
 		F74A450E27E3154900657E9A /* NeumorphismLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismLight.swift; sourceTree = "<group>"; };
 		F74A451027E3155200657E9A /* NeumorphismDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismDark.swift; sourceTree = "<group>"; };
+		F74A451427E31ED700657E9A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F751C9AD27F305D8000C89A1 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 		F7522F0427DCA11A00358D54 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		F7522F0627DCA14900358D54 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F7522F0827DCA15F00358D54 /* SignUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPView.swift; sourceTree = "<group>"; };
@@ -230,6 +239,11 @@
 		F782BAA127256CA600EF3BA2 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		F7ABB92D27D5AC1100A28EC1 /* AppleClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleClockView.swift; sourceTree = "<group>"; };
 		F7ABB92F27D5ACDE00A28EC1 /* SpotifyNowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNowPlayingView.swift; sourceTree = "<group>"; };
+		F7BAC37427F28969000AAA8E /* StickyHeaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderContentView.swift; sourceTree = "<group>"; };
+		F7BAC37627F289E6000AAA8E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F7BAC37827F28DA7000AAA8E /* FoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardView.swift; sourceTree = "<group>"; };
+		F7BAC37A27F28F08000AAA8E /* FoodHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodHeaderView.swift; sourceTree = "<group>"; };
+		F7BAC37C27F2A5B1000AAA8E /* FoodTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTab.swift; sourceTree = "<group>"; };
 		F7C197D52741183A00C7DF2A /* AppStoreArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreArticle.swift; sourceTree = "<group>"; };
 		F7C197D72741198C00C7DF2A /* ArticleExcerptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleExcerptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -442,9 +456,9 @@
 			children = (
 				F77D020526EDAA60008234ED /* SwiftUI_ViewsApp.swift */,
 				F77D020726EDAA60008234ED /* ContentView.swift */,
+				F77F51752753946500186811 /* BasicView */,
 				F74A450B27E3150C00657E9A /* Neumorphism */,
 				F7522F0327DCA10700358D54 /* LoginPage */,
-				F77F51752753946500186811 /* BasicView */,
 				F77F927327255DBF00A9379B /* handleKeyboard */,
 				F731E179270DC8A20090D24C /* Gesture */,
 				F7ABB92C27D5ABB300A28EC1 /* AppleClockView */,
@@ -457,11 +471,13 @@
 				BF896AD4273152D900115A80 /* FinanceApp */,
 				F7C197D3274117BA00C7DF2A /* FakeAPPStore */,
 				F70966CA274A427A00878A0D /* ImageCarousel */,
-				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F70966D32753711800878A0D /* ExpandableList */,
 				F70966D82753833300878A0D /* LazyGrid */,
 				F77F51742753944E00186811 /* ProgressRing */,
+				F7BAC37027F28909000AAA8E /* StickyHeader */,
 				F77D020E26EDAA62008234ED /* Info.plist */,
+				F74A451427E31ED700657E9A /* Colors.xcassets */,
+				F77D020926EDAA62008234ED /* Assets.xcassets */,
 				F77D020B26EDAA62008234ED /* Preview Content */,
 			);
 			path = "SwiftUI-Views";
@@ -624,6 +640,43 @@
 			path = AppleClockView;
 			sourceTree = "<group>";
 		};
+		F7BAC37027F28909000AAA8E /* StickyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAC37327F28930000AAA8E /* ViewModel */,
+				F7BAC37227F2892B000AAA8E /* Model */,
+				F7BAC37127F28926000AAA8E /* view */,
+			);
+			path = StickyHeader;
+			sourceTree = "<group>";
+		};
+		F7BAC37127F28926000AAA8E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAC37427F28969000AAA8E /* StickyHeaderContentView.swift */,
+				F7BAC37827F28DA7000AAA8E /* FoodCardView.swift */,
+				F7BAC37A27F28F08000AAA8E /* FoodHeaderView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F7BAC37227F2892B000AAA8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAC37627F289E6000AAA8E /* Food.swift */,
+				F7BAC37C27F2A5B1000AAA8E /* FoodTab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7BAC37327F28930000AAA8E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F751C9AD27F305D8000C89A1 /* FoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F7C197D3274117BA00C7DF2A /* FakeAPPStore */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,7 +714,7 @@
 		F77D01FA26EDAA60008234ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					F77D020126EDAA60008234ED = {
@@ -692,6 +745,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74A451527E31ED700657E9A /* Colors.xcassets in Resources */,
 				F77D020D26EDAA62008234ED /* Preview Assets.xcassets in Resources */,
 				F77D020A26EDAA62008234ED /* Assets.xcassets in Resources */,
 			);
@@ -719,6 +773,7 @@
 				F731E17B270DCA8B0090D24C /* RestaurantInfo.swift in Sources */,
 				BF896AE827315F0600115A80 /* PFPersistence.swift in Sources */,
 				BFA5FC782728210F004C139A /* SwiftUI_AnimateGradient.swift in Sources */,
+				F7BAC37527F28969000AAA8E /* StickyHeaderContentView.swift in Sources */,
 				F77F9248271C342A00A9379B /* NewToDoView.swift in Sources */,
 				F731E166270AAE890090D24C /* SwiftUI_Modal_Alert_Float.swift in Sources */,
 				F77D020826EDAA60008234ED /* ContentView.swift in Sources */,
@@ -735,6 +790,7 @@
 				BF896AFA27315F6800115A80 /* PaymentDetailViewModel.swift in Sources */,
 				F72B724B271C258E004CA48C /* LoanContentView.swift in Sources */,
 				F7ABB92E27D5AC1100A28EC1 /* AppleClockView.swift in Sources */,
+				F751C9AE27F305D8000C89A1 /* FoodViewModel.swift in Sources */,
 				BF896AF527315F2A00115A80 /* KeyboardAdaptive.swift in Sources */,
 				F7C197D62741183A00C7DF2A /* AppStoreArticle.swift in Sources */,
 				F70966D72753718F00878A0D /* MenuItem.swift in Sources */,
@@ -772,15 +828,19 @@
 				F74A451127E3155200657E9A /* NeumorphismDark.swift in Sources */,
 				F77F924D271C3AE600A9379B /* KeyboardResponder.swift in Sources */,
 				F72B7211271301F8004CA48C /* LoanStore.swift in Sources */,
+				F7BAC37D27F2A5B2000AAA8E /* FoodTab.swift in Sources */,
 				BF896AF127315F2A00115A80 /* BottomSheet.swift in Sources */,
 				F72B720F27130139004CA48C /* Loan.swift in Sources */,
 				BFD1B3FB27291E2000EF14AA /* SwiftUI_NamespaceAnimation.swift in Sources */,
 				F72B724D271C266B004CA48C /* LoanFilterView.swift in Sources */,
 				BF896AF227315F2A00115A80 /* PaymentFormView.swift in Sources */,
 				F72B720A270EFC3C004CA48C /* SwiftUI_zIndex.swift in Sources */,
+				F7BAC37B27F28F08000AAA8E /* FoodHeaderView.swift in Sources */,
 				F731E16A270AE7B80090D24C /* SwiftUI_form.swift in Sources */,
 				F77F92722725588600A9379B /* AutoResize.swift in Sources */,
+				F7BAC37727F289E6000AAA8E /* Food.swift in Sources */,
 				F706070626F9D4A300AC66BC /* SwiftUI_List.swift in Sources */,
+				F7BAC37927F28DA7000AAA8E /* FoodCardView.swift in Sources */,
 				F72B720C270F08C3004CA48C /* CardDragState.swift in Sources */,
 				F731E1642709BBCF0090D24C /* ArticleDetailView.swift in Sources */,
 				F731E17F270DCB400090D24C /* RestaurantInfoRow.swift in Sources */,
